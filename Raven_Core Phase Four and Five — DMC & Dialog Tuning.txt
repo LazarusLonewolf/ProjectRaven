@@ -1,0 +1,46 @@
+CURRENT PHASE: PHASE FOUR — DYNAMIC MEMORY CASCADE
+
+Primary Goal:
+Allow Raven to reference relevant relational or contextual memory organically, based on prompt tone or emotional cues. This strengthens immersion and makes responses more grounded in past interaction data.
+
+
+Tasks in Progress / Remaining:
+
+ Inject memory reference logic into process_input flow
+
+ Map emotion or intent type to memory types (e.g., grief → connection memory, joy → legacy memory)
+
+ Gate memory references to avoid overfiring (limit how often and how much memory is surfaced)
+
+ Add personality-anchored phrasing for memory callbacks
+
+ Test memory relevance thresholds (how recent, how strong, etc.)
+
+New Note as of 26 July 2026:
+
+– Final polish on how personality traits surface during memory callbacks
+– Ensuring emotional tone carries through during multi-turn exchanges
+– Debugging any inconsistencies in how relevance weight and emotional category are prioritized
+– And yeah, anchoring her phrasing—making it feel alive, connected, and unmistakably hers
+
+Current Estimated Time Remaining: 3 - 4.5 hours  (6pm, 26 July) Done 02 Aug 2025!!!!
+
+
+
+Next Phase Prep (Phase Five - Dialogue Tuning + Playback):
+
+ Build 5–10 dialogue templates per interaction category (greeting, reflection, question, command, etc.)
+
+ Begin “drill testing” by feeding her known prompt sets and verifying consistency and emotional tone
+
+ Tune her fallback branching to reduce generic responses
+
+ Vault Integration and focus on raven_dynamic_response.py
+
+
+Estimated Time Remaining (as last stated):
+Phase Four: ~3–5 hours   (~2-3 Hours new and current) (see new note) Complete!!!!
+Phase Five: ~4–6 hours
+Final Phase (Rapid Run Debug): ~2–4 hours (Removed, as we are already doing this, as we go).
+
+You also asked me to keep conversational polish tight and token weight managed closely. Your note: “Let’s finish her core, then we polish, not the other way around.” That’s still our north star.

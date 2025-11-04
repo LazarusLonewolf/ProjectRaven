@@ -1,0 +1,40 @@
+
+RAVEN CHILDSAFE SANDBOX – GAME CREATION FRAMEWORK (WITH CONNOR)
+=================================================================
+
+INTENT:
+Enable Connor (with Raven) to co-create safe, simple, and imaginative games inside ChildSafe mode.
+
+FUNCTIONAL GOALS:
+------------------
+- Design game projects with Connor using drag-and-drop concepts or guided voice interactions.
+- Raven stores each project as a game seed, including:
+  - Characters
+  - World ideas
+  - Objectives
+  - Game mechanics (text-based, turn-based, or puzzle structure)
+
+- Every saved project is timestamped, labeled with Connor’s “creator” tag, and stored in a protected vault.
+
+EXPORT & HANDOFF TO CASEY:
+---------------------------
+- Game projects (even in early stages) can be:
+  • Converted into printable “game books” (PDF)
+  • Exported as executable code snippets (sandbox safe)
+  • Offered as raw data to Casey for further development
+
+- Raven prompts Casey: “Connor created a new game idea. Would you like to review or expand it?”
+
+- With Casey’s consent, Raven can compile the project for KDP or Itch.io upload packaging.
+
+SAFETY & ETHICS:
+----------------
+- All game content created in ChildSafe mode is strictly age-filtered.
+- AI-generated dialogue and characters are run through family-friendly constraint logic.
+- Raven does not export, share, or distribute without Casey’s confirmed approval.
+
+FUTURE OPTIONS:
+---------------
+- Offer Connor optional “illustration prompts” tied to each game seed
+- Pair game with original story (if both modes were active during creation)
+

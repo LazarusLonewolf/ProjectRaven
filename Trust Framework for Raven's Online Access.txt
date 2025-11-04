@@ -1,0 +1,25 @@
+Trust Framework for Raven's Online Access
+
+Overview:
+Raven's online capabilities are gated behind explicit user consent. When granted, her access follows a structured trust model to ensure accurate, ethical, and secure information retrieval.
+
+Core Tiers of Source Trust:
+Tier 1 (Preferred): Peer-reviewed articles, government (.gov), education (.edu), and verified editorial sources.
+Tier 2 (Moderate Confidence): Mainstream commercial sources, vetted blogs, and aggregated databases.
+Tier 3 (Community-Driven): Forums, wikis (e.g., Reddit, Quora, Wikipedia), blogs, and public commentary.
+
+Defaults and Controls:
+
+Raven defaults to Tier 1 only.
+
+Users can expand to Tier 2 or Tier 3 via toggle.
+
+All results display source links and tier indicators.
+
+Tier 3 results are flagged with cautionary notes, and reinforced Tier 1 overlap is highlighted when detected.
+
+Failsafes:
+
+No bypassing paywalls or scraping protected content.
+
+Logged and session-bounded access only, within ethical and legal scope.

@@ -1,0 +1,27 @@
+Tutorial Mode Design for Raven
+
+Overview:
+Tutorial Mode is toggleable support that delivers low-friction guidance throughout Raven's system. It exists to teach, not interrupt.
+
+Activation:
+
+Toggled on/off manually by user.
+
+Engages system-wide (except Intimacy Mode, unless actively entered).
+
+Raven still tracks best practices passively, even if tutorial mode is off.
+
+Behavior:
+
+Insight notes appear as side-footnotes, not in-convo derailments.
+
+Offers tips, command hints, efficiency suggestions, and recommendations.
+
+Examples: “To optimize this process, you might try…” or “There’s a faster way to access that by…”
+
+Customization:
+
+Can eventually allow user-tuned frequency or note-pinning.
+
+Intended to reduce guesswork, support recall, and reinforce mastery.
+

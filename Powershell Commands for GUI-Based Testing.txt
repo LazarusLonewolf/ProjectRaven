@@ -1,0 +1,21 @@
+the PowerShell command using & (the call operator) to explicitly run Python from anywhere, without needing to be in the project directory. Here’s how that version looks:
+
+& "C:\Path\To\Python\python.exe" "C:\Users\Paul\Desktop\Raven\container\aeris_core\app\ui\raven_gui.py"
+
+
+
+For your setup, assuming you’re using the standard install and python.exe is accessible via environment variables, you can use:
+
+& python "C:\Users\Paul\Desktop\Raven\container\aeris_core\app\ui\raven_gui.py"
+
+
+
+for later:
+
+& "C:\Users\Paul\Desktop\Raven\launch_raven_gui.ps1"
+
+
+
+Most recent:
+
+ & "C:\Program Files\Python311\python.exe" "C:\Users\Paul\Desktop\Raven\container\aeris_core\app\ui\raven_gui.py"

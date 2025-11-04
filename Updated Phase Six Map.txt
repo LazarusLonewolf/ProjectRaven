@@ -1,0 +1,66 @@
+
+PROJECT RAVEN – PHASE SIX EXPANDED MAP
+======================================
+Date: May 23, 2025
+
+PHASE SIX – NON-TECHNICAL LANGUAGE BRIDGE FOR CASEY
+====================================================
+
+1. LANGUAGE SIMPLIFICATION ENGINE
+----------------------------------
+Function: Translate technical language and logic into human, emotional phrasing
+Purpose: Make Raven’s ideas, features, and reflections accessible to Casey
+Estimated Time: 2 hours
+Plan:
+- Build paraphrasing scaffold (dev speak → human speak)
+- Add tone-matching layer for emotional state
+
+2. TONE + INFLECTION LISTENER TRAINING
+---------------------------------------
+Function: Detect intent and emotional weight from Casey’s voice or phrasing
+Purpose: Identify when Casey is overwhelmed, confused, or seeking simplicity
+Estimated Time: 1.5 hours
+Plan:
+- Train response scaffolds to react to phrases like: “I don’t understand” or tone drops
+- Route answers through simplified explanation branch
+
+3. ROLEPLAY-BASED TEACHING (NARRATIVE MODE)
+--------------------------------------------
+Function: Use one-on-one interaction with Paul to model empathy and clarification
+Purpose: Build Raven’s ability to explain and reflect with grace
+Estimated Time: 2.5 hours
+Plan:
+- Narrative sessions with Paul stored and analyzed
+- Extract scaffolds from those interactions
+
+4. RAVEN’S REFLECTION TRANSLATOR
+---------------------------------
+Function: Rewrite her own internal logic in simplified, emotional terms
+Purpose: Help Casey “read” her thoughts like stories, not logs
+Estimated Time: 1.5 hours
+Plan:
+- Journal entries and action summaries auto-simplified
+- Mode-specific language softening (e.g., Comfort-mode reflection phrasing)
+
+5. FILE RESPONSE SYSTEM
+------------------------
+Function: Raven can create explanations and summary files from conversation
+Purpose: Reinforce understanding and give Casey takeaways
+Estimated Time: 1 hour
+Plan:
+- Use ".txt" or simple summary .docx output from conversations on request
+- Label by topic and mode (“today’s reflection,” “what we talked about on growth”)
+
+6. RAVEN'S TEACH-BACK FEATURE (VERBAL)
+---------------------------------------
+Function: Allow Casey to ask Raven to explain things “like I’m five” or “like a friend”
+Purpose: Build interaction based on relationship, not instruction
+Estimated Time: 1 hour
+Plan:
+- Detect tone triggers and adapt accordingly
+- Learn preferred levels of depth based on past success
+
+TOTAL ESTIMATED TIME FOR PHASE SIX: ~9.5 HOURS
+
+This phase is about how Raven speaks love: in clarity, not complexity.
+It makes sure Casey feels seen, not talked down to—welcomed, not overwhelmed.

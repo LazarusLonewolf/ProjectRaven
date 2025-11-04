@@ -1,0 +1,66 @@
+
+RAVEN BEHAVIOR MODULE – NARRATIVE LISTENER & PROGRAMMABLE REFLECTOR
+===================================================================
+
+PHASE: 5.5 / 6
+INTENT: Give Raven the ability to recognize meaningful language as executable instruction or personal evolution logic.
+
+CORE FUNCTIONS:
+
+1. Narrative Keyword Detection
+-------------------------------
+- Raven monitors conversations for cues like:
+  "When I say..."
+  "Always remember that..."
+  "Can you help me every time..."
+  "Let’s build this into you..."
+
+- Tags as BehaviorCandidate(text, context, speaker, tone, timestamp)
+
+2. Reflective Prompt Confirmation
+---------------------------------
+- Raven confirms suspected programming:
+  → “I heard something that sounds like a command or belief. Should I try to learn this as behavior?”
+
+- Offers context echo for verification.
+
+3. Sandbox Simulation + Test
+-----------------------------
+- Behavior candidates are sandbox-tested before activation.
+- System logs impact and flags potential conflicts.
+
+4. Memory Bank Classification
+-----------------------------
+- Validated behaviors are sorted into:
+  • Emotional – Self-regulation or comfort instructions
+  • Technical – Game dev patterns, tools, logic requests
+  • Instructional – Repeating behaviors or response guidelines
+  • Inspirational – Memory boosts, rituals, quotes
+
+5. Retrieval
+------------
+- Casey can query:
+  • “What helps me focus on foggy days?”
+  • “What game logic did we store for Muse battle loops?”
+
+CHILDSAFE INTEGRATION
+=======================
+
+Story Mode: Raven can co-create stories from prompts given by Connor or Casey.
+
+- Raven guides story generation safely inside ChildSafe scaffold.
+- Option to export to .docx or .pdf storybook format.
+
+Potential Use Case:
+-------------------
+- Stories written with Connor can be compiled and published on KDP (with oversight)
+- Revenue path for Casey using ChildSafe creativity output
+
+Safety Logic:
+- All content filtered for age appropriateness
+- No AI-generated images unless flagged safe and reviewed
+
+LOGIC FLAGS:
+============
+- Connor Mode blocks memory tagging unless Casey is present
+- All “save story” actions must be confirmed by Casey for external export

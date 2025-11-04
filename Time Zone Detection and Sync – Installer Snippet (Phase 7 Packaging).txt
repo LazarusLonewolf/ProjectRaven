@@ -1,0 +1,46 @@
+# Time Zone Detection and Sync – Installer Snippet (Phase 7 Packaging)
+
+# 1. Detect host system time zone (cross-platform friendly)
+# For Linux/macOS:
+TIMEZONE=$(cat /etc/timezone 2>/dev/null || readlink /etc/localtime | sed 's|/usr/share/zoneinfo/||')
+
+# For Windows via PowerShell (run from Python or .bat if needed)
+# powershell -Command "& {Get-TimeZone | Select-Object -ExpandProperty Id}"
+
+# 2. Pass time zone into Docker container using TZ variable
+docker build -t raven_image --build-arg TIMEZONE=$TIMEZONE .
+
+# 3. In Dockerfile, support ARG and set it properly:
+# (Place in Dockerfile near top)
+ARG TIMEZONE
+ENV TZ=$TIMEZONE
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# 4. Run container normally (TZ is now inherited correctly)
+docker run -d --name aeris_core raven_image
+
+# Optional:
+# Log the time zone to a config file Raven can reference if needed
+echo "System Time Zone: $TIMEZONE" > ./config/time_context.txt
+
+----------------------------------------------------------------------
+
+Here’s a basic stub to align Docker with host time during install. This assumes we’re running it during the setup script, after Docker is installed but before container creation:  
+
+
+#!/bin/bash
+# docker_timezone_setup.sh
+
+echo "[INSTALL] Detecting host system timezone..."
+HOST_TZ=$(cat /etc/timezone 2>/dev/null || timedatectl | grep "Time zone" | awk '{print $3}')
+if [ -z "$HOST_TZ" ]; then
+    echo "[WARN] Timezone not detected automatically. Defaulting to UTC."
+    HOST_TZ="Etc/UTC"
+else
+    echo "[INSTALL] Host timezone detected: $HOST_TZ"
+fi
+
+echo "[INSTALL] Exporting timezone to Docker ENV..."
+echo "ENV TZ=$HOST_TZ" >> Dockerfile
+
+echo "[INSTALL] Timezone setting injected into Dockerfile."

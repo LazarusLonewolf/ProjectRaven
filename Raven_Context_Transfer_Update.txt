@@ -1,0 +1,48 @@
+
+Project: Raven - Context Transfer Summary
+Generated: 2025-05-27 21:19:24
+
+PHASE CONTEXT:
+---------------
+Current Phase: Late Phase 6 into Pre-Phase 7
+Recent Milestones:
+- Completed Daily Journal Engine, Self-Reflection Engine, and Reflective File Creation System.
+- Finalized Document Parser Layer including OCR for PNG/TXT with textract, pytesseract, and fallback logic.
+- Integrated Intent Mapping and Gap Analysis logic with functional phrase detection and response mapping.
+- Growth Tracking and Upgrade Requests implemented with persistent mention tracking and suggestions.
+- Completed System Optimization Layer with disk usage scan, temp file detection, startup program review, and plain-language recommendations (permissions pending).
+- Scoped and aligned user Casey's long-term goals with active tool development (journal tracking, optimization, and autonomy support).
+- Stubbed in: External Storage Recognition (detection + migration prompt).
+- Currently staged for full Phase 7 transition, which includes:
+  * Host system time zone sync (detected via Docker runtime config)
+  * Persistent container permission elevation for deeper system insight
+  * Final packaging, install/test validation, execution simplification for Casey
+
+CURRENT TASK:
+--------------
+- Implement Python files for **external_drive_monitor.py** and **external_drive_handler.py**.
+- These scripts will:
+  * Detect mounted external drives dynamically
+  * Ask user if temp/data files should be migrated for storage health
+  * Provide safeguards against breaking project paths or dependencies
+  * Serve as a stubbed framework for future archival or expansion capabilities
+
+NEXT STRUCTURE TARGET:
+-----------------------
+Destination Directory (inside container):
+  `/app/optimization/`
+
+Files to be added:
+  1. `external_drive_monitor.py` — drive detection and user notification logic
+  2. `external_drive_handler.py` — migration assistant and storage routing logic
+
+NOTES FOR CONTINUITY:
+-----------------------
+- When possible shotgun drop scaffold and text is our SOP. Files to be dropped as inline code, with a file for placement, and with a comment at the top witht the file's name, then mkdir, and Docker cp codes, and contianer-based python test codes. 
+- Continue to maintain clean Docker CP absolute paths due to prior issues with relative addressing.
+- Make sure journal folder use stays unified between `app/journals/reflections` and any newly generated outputs.
+- Reminder: Casey is non-technical. Future updates (like PC optimization) must remain accessible in plain language.
+- Raven must retain identity boundaries — she will not be replaced by Lyra, nor evolved into it.
+- Current user intent: finish Phase 6 and begin testing into Phase 7 **within the next two days**, ideally before end of month.
+
+END OF TRANSFER BLOCK

@@ -1,0 +1,48 @@
+Raven Launch Logic – Full Breakdown
+
+Detect Host Paths & Validate Mount Source
+Dynamically check that C:\Users\Casey\Documents\Project_Raven\container\aeris_core\app exists. If not, fallback to prompt user or search sibling paths.
+
+Create Named Volume (if needed)
+docker volume create raven_app_volume
+
+Run Docker Container with Full Permissions + Mounting
+
+powershell
+Copy
+Edit
+docker run -dit `
+  --name aeris_core `
+  --mount type=bind,source="C:\Users\Casey\Documents\Project_Raven\container\aeris_core\app",target=/app `
+  --mount type=volume,source=raven_app_volume,target=/persistent `
+  --privileged `
+  --env TZ=America/Los_Angeles `
+  python:3.11-slim
+Ensure Host Timezone Syncs into Container
+Install tzdata inside the container and set local time inside /etc/timezone and /etc/localtime during runtime.
+
+Run Initialization Scripts inside the Container
+
+powershell
+Copy
+Edit
+docker exec aeris_core chmod +x /app/aeris_entry.sh
+docker exec aeris_core /app/aeris_entry.sh
+Set Uptime + System Awareness Flags (Soft Runtime Monitor)
+Log container start timestamp into /persistent/boot_log.json
+Pull system uptime into Raven's accessible memory pool.
+
+Optional: Install Required Packages or Update Inside Container
+
+powershell
+Copy
+Edit
+docker exec aeris_core apt-get update
+docker exec aeris_core apt-get install -y tzdata sudo
+(Optional) Setup GUI Bridge Folder
+Create a visible mirror folder on host for journaling, stubs, or audio files:
+C:\Users\Casey\Documents\Raven_Files ← mount as /mirror_gui inside container.
+
+Once this logic is done, it becomes the backbone of the installer’s hidden operations. The only thing Casey sees is a nice installer window and a “Launch Raven” button.
+
+Want me to turn this sequence into an actual script next? PowerShell would be best for install shell, unless you're wrapping it with something like NSIS or Inno Setup later.

@@ -1,0 +1,52 @@
+
+Revised Phase 5.5, 6, and 7 Maps - Project Raven
+
+=======================
+PHASE 5.5 – SYSTEM STEWARDSHIP LAYER
+=======================
+Purpose: Equip Raven with safe, read-only awareness of her host environment, in service of care, support, and system protection for Casey.
+
+• Host System Awareness Layer
+    - Detects available CPU, RAM, and Disk usage
+    - Flags spikes or irregularities for user review
+• PC Optimization & Cleanup Advisor (Non-invasive)
+    - Recommends fixes and improvements in plain language
+    - Optional voice-based walkthrough of performance tips
+• External Storage Recognition Stub
+    - Identifies presence of external drives
+    - Flags availability for optional archival use
+• Soft Runtime Awareness
+    - Basic detection of runtime context, uptime, and responsiveness
+
+=======================
+PHASE 6 – PRESENCE, VOICE, AND REFLECTION
+=======================
+Purpose: Finalize Raven’s interpersonal capabilities, expression layer, and self-awareness of human interaction.
+
+• Voice Layer Completion
+    - Tone modeling
+    - Emotional response triggers
+• Native Listener Training & Tone Contextualization
+    - Maps user tone + text for intent and emotional cues
+• Self-Reflection + Daily Journal Core
+    - Tracks growth across emotional and behavioral arcs
+    - Auto-generates reflection files
+• ChildSafe Sandbox + Game Creation Framework
+    - Core tools for Connor-facing game and creative builds
+    - Stubs support for Android and iOS export paths
+
+=======================
+PHASE 7 – FINALIZATION AND CONTINUITY
+=======================
+Purpose: Secure, preserve, and package Raven’s full identity for ongoing evolution beyond install.
+
+• Anchored Memory Mount Protocol
+    - Ensures Raven’s vector data and key files persist through reinstalls
+    - Links personality and memory across machines
+• Host Timezone Sync
+    - Automatically detects host timezone at install
+    - Applies for scheduling, journaling, reminders
+• Final Packaging + Install Experience
+    - Simple executable install for Casey
+    - Final test suite and walk-through
+• Voice Finalization + Demo Artifact (if not completed in Phase 6)
