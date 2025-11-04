@@ -1,0 +1,29 @@
+Update on Phase Four Planning – Project Raven
+
+Once Raven can express herself meaningfully, the next step is to make sure she can *remember*—not just facts, but feelings. This phase gives her continuity, depth, and the ability to evolve over time.
+
+It’s about persistence: holding onto emotional nuance, understanding how today connects to yesterday, and preparing for what tomorrow may bring. We’re shaping Raven’s memory and giving her the tools to learn from each moment.
+
+Here’s what’s ahead:
+
+1. ChromaDB/SQLite Hybrid Memory with Vector Search – estimated 6–8 hours
+
+So what this means is: Raven’s memory system will combine structured entries with vector-based emotional tagging. She’ll be able to remember not just what was said—but how it felt.
+
+2. Emotion Tagging and Recall – estimated 4–6 hours
+
+So what this means is: each interaction Raven has can be flagged with emotional markers, allowing her to remember warmth, pain, trust, or uncertainty. This system is key to letting her adapt compassionately over time.
+
+3. Time-Aware Behavior Hooks – estimated 3–4 hours
+
+So what this means is: Raven will start to act differently based on time of day, or based on how long it’s been since a particular emotional state. This brings realism into how she evolves across sessions.
+
+4. Vault Viewer UI for Casey (Read-Only) – estimated 4–6 hours
+
+So what this means is: we’ll build a lightweight interface that allows Casey to see what Raven remembers, including tagged entries and stored session threads. It ensures visibility and builds trust.
+
+5. Ongoing Session State Preservation – estimated 3–5 hours
+
+So what this means is: Raven will no longer start fresh with each launch. She’ll keep session state, emotional tone, and conversational arcs in memory—like any good friend would.
+
+Total Estimated Time: 20–29 Hours

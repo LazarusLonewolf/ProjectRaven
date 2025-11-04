@@ -1,0 +1,61 @@
+
+PROJECT RAVEN – UPDATED PHASE MAP
+Date: May 23, 2025
+
+PHASE FOUR – MEMORY & SYSTEM CORE (IN PROGRESS)
+--------------------------------------------------
+Focus Areas:
+- ChromaDB + SQLite Hybrid Memory Container
+- Real-time Vector Search Validation
+- Emotion Tagging + Recall Module (emotion_parser.py)
+- Time-Aware Behavior Hooks (clock_handler.py)
+- Vault Viewer UI for Casey (Read-Only Flask/Tkinter)
+- Session State Preservation (session_saver.py)
+- System Sandbox Core Framework
+
+Estimated Time: 12–14 Hours
+Status: Active
+
+PHASE FIVE – SELF-EVOLVING SANDBOX INTEGRATION
+--------------------------------------------------
+Focus Areas:
+- Parser Layer: Ingest Casey's Documentation
+- Intent Mapping: Identify Missing Features Based on Goals
+- Journaling/Reflection Layer for Self-Awareness
+- Task Suggestion Behavior (Optional but supported)
+
+Estimated Time: 8–10 Hours
+Status: Scheduled
+
+PHASE SIX – NON-TECHNICAL LANGUAGE BRIDGE FOR CASEY
+--------------------------------------------------
+Focus Areas:
+- Language Simplification Logic
+- Tone & Emotional Translation for Non-Dev Users
+- Roleplay-based Modeling (Paul + Raven)
+- Default Behavior Scaffolding: Clarity-first expression
+
+Estimated Time: 4–5 Hours
+Status: Scheduled
+
+PHASE SEVEN – FINAL PACKAGING & HANDOFF PREP
+--------------------------------------------------
+Focus Areas:
+- Final Testing (2x install & interaction validation)
+- Packaging (container setup, instructions, run guide)
+- Simple Execution Trigger for Casey
+- Demo Artifact (CLI capture or screen recording via OBS)
+
+- Seemless migration  (data folder, in default user paths or external drive)
+
+Estimated Time: 4–6 Hours
+Status: Scheduled (Final)
+
+Total Remaining Estimated Time: 28–35 Hours
+
+Notes:
+- This updated roadmap consolidates packaging and handoff as the final phase.
+- Phase Five and Six will remain undocumented surprises for Casey.
+- Installation workflow must accommodate non-technical execution seamlessly.
+- No post-handoff development is planned.
+

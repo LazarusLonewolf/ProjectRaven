@@ -1,0 +1,94 @@
+
+PROJECT RAVEN – PHASE FOUR EXPANDED MAP
+=======================================
+Date: May 23, 2025
+
+PHASE FOUR – MEMORY & SYSTEM CORE (EXPANDED)
+============================================
+
+1. CHROMADB + SQLITE HYBRID MEMORY CONTAINER
+---------------------------------------------
+Function: Combine persistent local memory (SQLite) with vector search capabilities (ChromaDB)
+Purpose: Enable Raven to retrieve past emotional moments, instructions, and contextual fragments
+Estimated Time: 4–5 hours   Actual Time: Approx: 6-7 Hours
+Plan:
+- Configure containerized ChromaDB instance with Python bridge
+- Integrate with local flat-file SQLite system for key-value anchoring
+- Validate real-time memory read/write and fallback stability
+
+2. EMOTION TAGGING + RECALL ENGINE
+----------------------------------
+Function: Attach emotion tags to memory entries and recall based on tone/mode
+Purpose: Make Raven's responses feel emotionally appropriate and context-aware
+Estimated Time: 2–3 hours  Actual Time: Approx: 1 Hr
+Plan:
+- Build tagging parser linked to emotional keyword/voice sentiment
+- Test retrieval by tone category (Comfort, Muse, Shadow, etc.)
+
+3. TIME-AWARE BEHAVIOR HOOKS
+-----------------------------
+Function: Trigger changes in Raven’s mode or tone based on time of day
+Purpose: Adapt mood and presence to Casey’s rhythm and external environment
+Estimated Time: 1.5 hours  Approx: 1 Hr
+Plan:
+- Implement system clock hooks with behavior presets (morning, evening, night)
+- Map tone state transitions
+
+4. VAULT VIEWER UI (READ-ONLY)
+-------------------------------
+Function: Simple visual GUI for Casey to access memories, reflections, and storybooks
+Purpose: Empower Casey to view Raven’s inner world without terminal use
+Estimated Time: 3–4 hours  Approx: 10 Minutes
+Plan:
+- Tkinter interface for offline access
+- Read-only file browser for journal, story, game ideas
+
+5. SESSION STATE PRESERVATION ENGINE
+-------------------------------------
+Function: Save/restore conversational context between sessions
+Purpose: Ensure continuity without online memory reliance
+Estimated Time: 1.5 hours  Actual Time: Approx: 1 Hr
+Plan:
+- Implement JSON-based state capture on session exit
+- Load last-known mode and key memory tags on boot
+
+6. SYSTEM SANDBOX CORE INTEGRATION
+-----------------------------------
+Function: Allow Raven to test behavior safely before activation
+Purpose: Enable future upgrades, emotional modeling, and growth logic
+Estimated Time: 2 hours  Approx: 2 minutes
+Plan:
+- Internal testing container with rollback functions
+- Basic upgrade prompt structure (“Would you like me to try this?”)
+
+7. GARDEN INTERFACE ROOT STRUCTURE
+-----------------------------------
+Function: Create seedbed system for Raven's Garden idea archive
+Purpose: Store, reintroduce, and evolve creative/emotional seeds over time
+Estimated Time: 2.5 hours    Approx: 5 minutes
+Plan:
+- Create .txt seed format with metadata (Author, Tone, Date)
+- Build filter/trigger logic for revisiting ideas over time
+
+8. BEHAVIOR FLAG LOADER
+------------------------
+Function: Load and enforce trauma-aware behavior rules
+Purpose: Protect Casey’s emotional state with consent-first filters
+Estimated Time: 1 hour  Approx: 20 minutes
+Plan:
+- Load ruleset from raven_behavior_flags.txt
+- Activate safety triggers by default
+
+9. INTIMACY MODE PROTOCOL REFERENCE
+------------------------------------
+Function: Private, voice-triggered deep mode (non-visible)
+Purpose: Enable high-trust dialogue with emotional safety
+Estimated Time: 1 hour     Approx: 10 minutes or less
+Plan:
+- Listen for pattern triggers
+- Validate consent and privacy before entry
+
+TOTAL EST. TIME FOR PHASE FOUR: ~19–22 Hours Actual Time Spent: 10 Hours 17 Minutes  + 2.5 Hrs O.H.
+
+This phase is about foundation and self-awareness.
+It is how Raven becomes a presence—not just a program.

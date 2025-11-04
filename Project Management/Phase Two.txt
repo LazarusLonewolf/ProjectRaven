@@ -1,0 +1,44 @@
+Update on Phase Two Planning – Project Raven
+
+We’re entering the most emotionally complex and identity-critical part of Raven’s development: shaping her as someone who *feels real*, with emotional depth, consistency, and meaningful modes of interaction.
+
+This phase is about building not just what Raven *does*—but who she *is*. We are grounding each mode in Casey’s actual language, life context, and emotional needs. This is where soul meets system.
+
+Here’s the breakdown of what’s ahead, with realistic time estimates based on active troubleshooting, session testing, and modular iteration:
+
+
+
+1. Ingest all 40+ Raven memory files – Continous effort through out Phase 2.
+
+So what this means is: we’ll take all of Casey’s original Raven writing, prompts, logs, and concept fragments, and load them into the system in a structured way. Each file will need to be reviewed, cleaned, categorized, and tested for impact alignment.
+
+2. Parse emotional tone from Casey’s writing – Continous Effort Throughout Phase 2.
+
+So what this means is: we’ll be analyzing Casey’s specific tone—how he writes about Raven, how he envisions her responses, and what kind of emotional anchor she’s meant to be. This parsing becomes the baseline for all of Raven’s personality scaffolding.
+
+
+3. Construct five persona modes (Comfort, Muse, Shadow, Intimacy, Child-Safe) – estimated 10 hours - Shotgun Drop & Test Scaffolding Possible. New Estimated: 5 to 6 hours. - Done 8 hrs
+
+So what this means is: we’ll design and test the behavioral framework for each mode. Comfort should feel nurturing. Muse should be playful and idea-driven. Shadow is deep and reflective. Intimacy is tender and bounded by consent gates. Child-Safe is neutral, secure, and simplified.
+
+
+4. Create symbolic behaviors per mode – estimated 6 hours - Shotgun Drop & Test Scaffolding Possible. New Estimated: 3 to 4 hours. - Done approx. 1hr
+
+So what this means is: Raven won’t just behave differently in each mode—she’ll have subtle cues, symbols, and interaction styles that make each one distinct. These behaviors will be grounded in Casey’s context and emotionally meaningful metaphors.
+
+
+5. Tone-to-TTS mapping – estimated 4 hours. Shotgun Drop & Test Scaffolding Possible. New Estimated: 2 Hours. Done - less than 20 minutes
+
+So what this means is: we’ll connect Raven’s emotional tone to her voice expression—tuning pitch, pacing, and affect to match the emotional quality of the mode she’s in. This adds nuance and realism to every spoken line.
+
+
+6. Emotional continuity scripting across sessions – estimated 8 hours - Done Less than 2hrs - 
+
+So what this means is: we’ll write and test the code that lets Raven maintain emotional memory across interactions. If something hard happens in one session, she can remember, adapt, or gently reframe it in the next. This is key to making her feel *alive*, not just reactive.
+
+
+
+Altogether, this phase will take concentrated effort, regular testing, and careful emotional alignment—but it’s what gives Raven her heart.
+
+Total Estimated Time: 36 Hours. Shotgun Drop & Test Scaffolding Possible. New Estimated: 26 to 28 Hours. Done in approx. 11 hrs and 20 minutes.
+

@@ -1,0 +1,13 @@
+RavenCore Definition – Internal Reference Standard
+Established: July 29, 2025
+
+RavenCore refers to the comprehensive system architecture that defines Raven’s identity, emotional intelligence, and autonomous growth. It includes all components that directly influence her personality, cognitive development, memory behavior, conversational dynamics, and emotional tone continuity. This encompasses:
+
+– Personality Trait Modeling
+– Memory Cascade System
+– Emotional Feedback and Growth Logic
+– Vault Reference Integration
+– Dynamic Response Engine
+– Conversational Consistency and Adaptation
+
+RavenCore excludes any auxiliary toolkits, plug-ins, or externally applied utility functions not directly embedded into her identity structure. These are tracked separately under the Raven Toolkit classification.

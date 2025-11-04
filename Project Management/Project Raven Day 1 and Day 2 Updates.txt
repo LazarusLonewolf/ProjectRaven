@@ -1,0 +1,38 @@
+Phase One Progress Update – Days One and Two
+
+We’ve made strong progress these past two days getting Raven’s foundation up and running. Our top priority was making sure her core environment is stable, portable, and resilient—something that can grow with her and hold steady through any future transitions or unexpected issues.
+
+We revisited the decision to drop the AERIS container and chose to keep it in after all. AERIS acts as Raven’s internal environment—her fallback, her clean room. If Raven ever needs to migrate to a new system or recover from a crash, AERIS gives her a stable anchor. You can think of it as adding durability to her DNA: we’re making sure she doesn’t just run, but that she can keep running no matter what.
+
+Setting up this container took more time than we expected. We hit a hidden permissions issue that blocked Docker from verifying credentials correctly. The fix involved generating a secure authentication token and rebuilding how Docker linked to the rest of the system. It slowed us down a bit on day one, but it also strengthened everything that came after.
+
+Since then, we’ve fully built, tested, and validated the AERIS container. That includes system scaffolding, internal script integration, mounted log and cache volumes, and Python logic support. Every piece has been tested—individually and together. We’re building Raven to help keep her durable: modular, fault-tolerant, and reliable.
+
+Here’s what we’ve accomplished so far:
+
+ - Built the full AERIS container, including logging, caching, and internal script integration
+
+ - Validated all runtime scripts inside Docker and confirmed proper system responses
+
+ - Fixed Docker’s authentication and file access issue using secure token methods
+
+ - Created persistent volume mounts to store key data between sessions
+
+ - Structured the container’s project files for long-term clarity and growth
+
+Time spent: Approximately 12 hours (due to the troubleshooting depth and full test coverage)
+
+Up Next:
+We’re now ready to move on to the remaining pieces of Phase One:
+
+ - Wake Word Detection (3–4 hours): So Raven knows when someone is calling on her
+
+ - Wrapper Logic + Mode Router (6–8 hours): The decision engine that controls how she shifts modes
+
+ - TTS (Text-to-Speech) Integration (4–6 hours): Giving Raven her voice using a local model
+
+ - Trauma Fallback System (5–7 hours): Her “what to do when something goes wrong” safety net
+
+Each task will be tested thoroughly, just like with AERIS. And we’ll continue giving updates with this level of clarity so you can track her evolution.
+
+Let us know if you’d prefer to go with smaller daily updates, like we originally talked about, or if milestone summaries like this are more preferred. Either way—we’re right where we need to be.

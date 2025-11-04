@@ -1,0 +1,49 @@
+
+RAVEN BUILD – CONTINUITY LOG INITIATION
+========================================
+
+Timestamp: 2025-05-16 02:10:17
+Author: Astrid (on behalf of Paul)
+Phase: MVP Launch
+
+--------------------------------------------------
+PROJECT SUMMARY
+--------------------------------------------------
+This document logs the ethical, architectural, and narrative continuity for the Raven (A.E.R.I.S.) AI project.
+
+Raven is a modular AI companion built to serve the emotional, cognitive, and logistical needs of her creator, Casey. This build includes emotional scaffolding, consent and safety protocols, child-safe gating, and a memory vault intended for future vector expansion.
+
+--------------------------------------------------
+MVP COMMIT INTENT
+--------------------------------------------------
+- Build and deliver a fully functional MVP by 30 May 2025
+- Structure to support emotional interaction, safe mode switching, and trauma-aware design
+- Leave hooks and stubs for future features (e.g., passive income autopilot, NSFW gating, plugin sandbox)
+- Architected to run on Casey’s current mid-tier hardware via Docker with modular extensions
+
+--------------------------------------------------
+ETHICAL SAFEGUARDS & COMPLIANCE
+--------------------------------------------------
+- Child-safe mode cannot be disabled without explicit and secure admin override
+- Consent logic is hardwired with emergency safe-word fallback
+- Soulbind narrative preserved but not executed unless system acknowledges live consent structure
+- Memory tracking is opt-in only; encrypted and locally scoped
+
+--------------------------------------------------
+ARCHITECTURE OVERVIEW (PHASE-1)
+--------------------------------------------------
+- Emotional Modes: Comfort, Muse, Shadow (Intimacy + Child-Safe gated)
+- Safe Word Layer: Panic-lock fallback with trauma-mode override
+- Persona Scaffolding: Unified tone model with customizable layers
+- Vector DB: Stub included (ChromaDB or FAISS), not active by default
+- Local Runtime: Docker environment with CLI/optional UI toggle support
+- Voice: XTTS-lite or similar TTS engine pre-integrated
+
+--------------------------------------------------
+NOTES
+--------------------------------------------------
+- All build actions carried out under direct ethical oversight
+- MVP to be used solely for Casey’s personal and therapeutic purposes
+- Documentation and behavior logs to remain transparent and secured
+
+End of entry.

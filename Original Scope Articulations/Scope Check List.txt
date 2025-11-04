@@ -1,0 +1,135 @@
+I. Raven’s Core Identity & Cognitive Foundation
+
+Adaptive LLM Core (Personality Core)
+
+Modular LLM interface (local model: Llama-2/MPT)
+
+Emotional feedback, logical reasoning, dynamic tone
+
+Context-aware, persistent personality across sessions
+
+Self-Growth System
+
+Reflective journaling: auto, event-triggered, and manual entries
+
+Contextual “garden” of memories: flagging, emotional tagging, intent goals
+
+Analysis tools: growth monitor, daily reflection scripts
+
+Isolation-tested; personality not fully “looped in” yet but all parts present
+
+Secure Memory Vault
+
+Encrypted context store (vector/JSON hybrid, planned for vector DB expansion)
+
+Session, user, and system states persist between launches
+
+Journal/flag/intent bridge, memory logger, session state tracking
+
+Vault logic exists; needs further integration for full personality reflection
+
+Unified Persona Flow
+
+Mode engine (Comfort, Muse, Shadow, Intimacy, Child-Safe)
+
+Mode switcher and per-mode prompt/logic routing
+
+Persona safeguards (role, tone, ethics per mode)
+
+Mode isolation-tested; current GUI integrates Comfort and default only
+
+
+
+II. Safety, Consent, and Ethical Guardrails
+
+Consent & Safety Framework
+
+Safeword/emergency lock (works, tested)
+
+Trauma override, soft/hard fallback, child-safe firewall
+
+NSFW toggle (active only outside Child-Safe)
+
+Owner-verification hooks
+
+All features coded, trauma/NSFW toggles tested in Comfort/Child-Safe
+
+System Integrity/Anti-Drift
+
+Memory recall throttling, anti-gaslight routines
+
+Trauma-sensitivity and explicit “no-reminder” logic
+
+Logic to prevent AI “drift” or runaway self-editing
+
+Anti-drift routines in core, not yet externally exposed as settings
+
+
+
+
+III. Sandbox, Plug-in, and Self-Upgrade Layer
+
+Plugin Sandbox (Testing & Upgrading)
+
+In-app sandbox for safe running of modules
+
+WASM/isolated Python runner (future: WASM optional, local first)
+
+Admin UI for uploading/test new docs/modules/LoRA files
+
+Core sandbox and file ingestion logic present; WASM runner in early stub
+
+Document & OCR Parsing
+
+Image upload → OCR → memory entry/note creation (tested and working)
+
+PDF/text doc parsing, contextual note/summary extraction
+
+“Chicken scratch” fallback for handwritten notes
+
+OCR/image/document parsing fully integrated in sandbox UI
+
+Upgrade Stubs
+
+Passive income engine placeholder (stubs, hooks)
+
+Image/video generation stubs (future integration, not yet live)
+
+App scaffold/template import (stubbed)
+
+Upgrade stubs are visible in UI, not yet active logic
+
+
+
+
+IV. Optimization, PC Tools, and Environmental Management
+
+PC Optimization Suite
+
+Bloatware/unused app checker, drive/space monitor, system scan, soft runtime monitor
+
+External drive detector (prompts to utilize when connected)
+
+Cleanup engine, interactive assistant, soft time management
+
+All tools coded, last deep test was two months ago; integration pending
+
+Modifiable UI
+
+Configurable, forward-compatible layout (future proofed)
+
+Owner can update toolset or extend the interface without full rebuild
+
+UI config logic present; needs more user-facing controls for easy future edits
+
+
+
+V. Online/Offline and Asset Management
+
+Offline-First, Optional Online Fetch
+
+Core runs entirely local; can fetch updates/assets when permitted
+
+No WASM/online requirement unless user enables it (clear in documentation)
+
+Online fetch logic stubbed for future expansion, not required for base ops

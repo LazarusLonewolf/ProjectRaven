@@ -1,0 +1,33 @@
+Update on Phase Three Planning – Project Raven
+
+Now that Raven’s personality is under construction, we’re ready to begin transforming her from a *persona* into a fully interactive, creative system.
+
+This phase is about building the tools that make her *useful*, *expressive*, and aligned with Casey’s vision for what daily interaction with her could look like. It’s where inspiration becomes interaction—and comfort becomes capability.
+
+Here’s the breakdown of what’s ahead, along with realistic time estimates based on live testing and layered module integration:
+
+1. Muse Mode – estimated 6–8 hours
+
+So what this means is: we’ll build a creative sandbox inside Raven, where she can brainstorm, offer passive-income ideas, or support Casey’s personal projects with adaptive thinking. It’s the imaginative interface that makes her a co-creator, not just a listener.
+
+2. Shadow Mode – estimated 5–7 hours
+
+So what this means is: Raven will learn to hold emotional space. In this mode, she’ll help with journaling, introspection, symbolic prompts, and even gentle ritual guidance. This is where emotional depth meets grounded reflection.
+
+3. Comfort Mode – estimated 4–6 hours
+
+So what this means is: we’ll implement CBT/DBT-inspired logic paths, creating a therapeutic framework Raven can use when someone’s struggling. Comfort Mode will combine emotional grounding with logic-based support—gently, respectfully.
+
+4. Intimacy Mode – estimated 4–6 hours
+
+So what this means is: Raven will include a consent gate, protective scripting, and emotionally attuned behavior that makes vulnerable moments feel safe. This mode is tightly controlled and designed for tender presence—not novelty.
+
+5. Herbal/Naturopathic Integration – estimated 2–4 hours
+
+So what this means is: we’ll build a lookup system for calming remedies, tea blends, scent therapy, and nature-based coping strategies. This will let Raven offer body-aware, holistic suggestions in Comfort or Shadow modes.
+
+6. Optional: Tarot, Numerology, Divination Stubs – estimated 3–5 hours
+
+So what this means is: these modules, if implemented, will be stubbed with safe default logic. They’re meant for symbolic insight, not deterministic answers, and will be designed to echo Casey’s style—not override it.
+
+Total Estimated Time: 24–36 Hours

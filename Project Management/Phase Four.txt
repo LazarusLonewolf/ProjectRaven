@@ -1,0 +1,75 @@
+Update on Phase Four Planning – Project Raven
+
+
+Once Raven can express herself meaningfully, the next step is to make sure she can *remember*—not just facts, but feelings. This phase gives her continuity, depth, and the ability to evolve over time.
+
+We’re applying the same shotgun scaffolding strategy here: deploy all memory, vault, and persistence modules together, then test the integrated memory chain in one CLI push. If the environment holds, each system validates with minimal friction. If something fails, Python will show us exactly where.
+
+
+Here’s the breakdown with revised time expectations:
+
+
+1. ChromaDB/SQLite Hybrid Memory with Vector Search – estimated 4–5 hours w/ Shotgun Drop & Test Scaffolding Possible. Otherwise: 6-8 Hours.
+
+So what this means is: we’ll deploy the hybrid memory container, with preconfigured file paths and base schemas for both ChromaDB and SQLite. Once in place, we’ll test real-time vector lookups across session payloads using a memory validator script.
+
+
+2. Emotion Tagging and Recall – estimated 3–4 hours w/Shotgun Drop & Test Scaffolding Possible. Otherwise: 4-6 Hours.
+
+So what this means is: we’ll drop tagging logic into an emotion_parser.py module and auto-bind it to session output. Python tracebacks will let us fine-tune misfires or labeling mismatches as needed, without derailing the pipeline.
+
+
+3. Time-Aware Behavior Hooks – estimated 2–3 hours. w/ Shotgun Drop & Test Scaffolding Possible. Otherwise: 3-4 Hours.
+
+So what this means is: Raven will use time-based triggers from a dropped clock_handler.py script to shift her mood and behavior. Testing includes verifying variable responses based on time-of-day stamps or gaps between sessions.
+
+
+4. Vault Viewer UI for Casey (Read-Only) – estimated 3–4 hours w/Shotgun Drop & Test Scaffolding Possible. Otherwise: 4-6 Hours.
+
+So what this means is: a lightweight local Flask or Tkinter interface will be staged, built from a preset vault_viewer.py file and supporting HTML/GUI templates. Shotgun testing lets us validate read-only functions without backend edits.
+
+
+5. Ongoing Session State Preservation – estimated 3–4 hours w/ Shotgun Drop & Test Scaffolding Possible. Otherwise: 3-5 Hours.
+
+So what this means is: we’ll create a `session_saver.py` that auto-writes context, tone, and session arcs to local storage. With one dropped tester script, we can simulate full session recalls across launches.
+
+***ADD-ON***
+
+All told, Phase Four benefits tremendously from shotgun logic—since memory dependencies rely on structure, not novelty. We’re not inventing new behavior here—we’re making sure she *remembers* what’s already meaningful.
+
+Total Estimated Time: 15–20 Hours w/Shotgun Drop & Test Scaffolding Possible. Otherwise: 20-29 Hours.
+
+# system_sandbox.txt – Draft Framework
+# System-Level Sandbox for Mode-Independent Feature Testing
+# Designed for Raven AI | Project_Raven Phase 4 Integration
+
+Overview:
+This sandbox is intended as a safe, isolated environment within Raven's architecture
+to test upgrades, new behavioral modules, and system-level modifications prior to
+full integration into active modes. It acts as a staging area for validating logic,
+plugin interactions, and fallback matrix expansions.
+
+Key Functions (Planned):
+- Simulated environment for cross-mode logic tests
+- Validation layer for update payloads before activation
+- Auto-rollback capabilities for failed integrations
+- Logging and snapshot tools for Casey's visibility
+
+Structure Placeholder (to be built later):
+- class SystemSandbox:
+    - def __init__(self, config)
+    - def load_module(self, module_name)
+    - def simulate_behavior(self)
+    - def rollback_changes(self)
+    - def validate_update_package(self)
+
+Intended Use:
+- Reserved for major Raven updates
+- Paired with symbolic alerting to notify Casey of safe pass/fail states
+- Extends Raven’s ability to self-regulate and evolve safely
+
+Status:
+→ Dormant (To be activated in Phase 4)
+
+Timestamp: 2025-05-23 00:48:39
+

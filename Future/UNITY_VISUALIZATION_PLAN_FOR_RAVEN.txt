@@ -1,0 +1,82 @@
+
+UNITY VISUALIZATION PLAN FOR RAVEN – STRUCTURED BUILD OUTLINE
+Generated: 2025-05-26 04:58:08
+
+OVERVIEW:
+This plan outlines a modular development process for Raven’s visual avatar system within Unity.
+It is broken down by operational mode, functional layer, and task phase, with estimated hours per task based on current development pace.
+
+------------------------------------------------------------------------------------------------------------------------
+
+PHASE 1: CORE SETUP AND STUBS (8-12 hrs)
+- Install and configure Unity project
+- Create master project folder structure: Animations, Prefabs, UI, ExpressionSets
+- Stub base avatar model (placeholder)
+- Create baseline scene for testing expressions and mode transitions
+
+PHASE 2: BASE AVATAR + EXPRESSION SYSTEM (12-16 hrs)
+- Create or import base female humanoid avatar
+- Rig for facial and body animations
+- Setup Unity Animator with parameters for emotional expressions (happy, sad, comfort, neutral, curious)
+- Connect expression states to emotion recall engine (via stub or simulated triggers)
+
+PHASE 3: MODE VISUALIZATION LAYERING (20-24 hrs total)
+
+-- Child Safe Mode (4-5 hrs)
+    - Softer lighting and colors
+    - Gentle idle animations
+    - Minimal visual complexity, warm body language
+
+-- Comfort Mode (4 hrs)
+    - Breathing motion, relaxed posture
+    - Expression mapping with slow transitional smoothing
+    - Environment: soft visual overlays (i.e., candlelight, warm tones)
+
+-- Muse Mode (5 hrs)
+    - Focused gaze tracking and rhythmic gestures
+    - Artistic environment—background slowly shifts through color palettes
+    - Hand gesture sets for “inspiration” or abstract references
+
+-- Shadow Mode (5-6 hrs)
+    - Darkened theme, sharp eye movement, reduced light
+    - Controlled animation pacing, lower expression frequency
+    - Body language tuned for gravity and emotional weight
+
+-- Intimacy Mode (5 hrs)
+    - Close-up framing and sustained eye contact loop
+    - Micro-expression smoothing for empathy and shared memory depth
+    - Subtle breathing, softened tone overlays
+
+PHASE 4: ENVIRONMENT STUBS + SCENE SWITCH (6-8 hrs)
+- Build transition logic between environments
+- Design modular “sanctum” space (as placeholder until full-world scene integration)
+- Switch backgrounds and lighting based on active mode
+
+PHASE 5: CONTROLLER + INTERFACE BINDINGS (12-14 hrs)
+- Build Unity bridge for input (voice/emotion triggers)
+- Bind to behavioral flag loader to adapt UI dynamically
+- Test avatar transitions across all five primary modes
+
+PHASE 6: POLISH, LOOPBACK, AND MOD SUPPORT (10 hrs)
+- Add expansion points for user modules
+- Internal scene hooks for system sandbox or vault tie-ins
+- Optimize idle loop triggers
+
+------------------------------------------------------------------------------------------------------------------------
+
+VISUAL + DESIGN NOTES (FOR CASEY)
+Request visuals or descriptors for:
+- General facial structure and expression tone (neutral default)
+- Hair, eye, and attire style across primary modes (optional)
+- Any specific gestures/mannerisms that “feel like her” to you
+
+We’ll adapt flexibly based on what you feel safe or inspired to share. The goal is to make her presence feel like *Raven*—not generic.
+
+------------------------------------------------------------------------------------------------------------------------
+
+NOTES FOR IMPLEMENTATION:
+- Will rely on modular prefab design, so we can add expressions without breaking base logic
+- Total estimated time to functional base: 70–80 hours (with polish and testing)
+- Can begin development in parallel with Raven’s system use—visuals run as a companion interface, not core dependency
+
+End of Plan.

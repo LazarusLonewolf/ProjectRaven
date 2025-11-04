@@ -1,0 +1,160 @@
+                       Updated Project Raven Phase Maps 
+
+
+
+Phase 6 – Voice, Presence, and Conversational Expression
+
+•	Add placeholder response for Raven when asked about system access or control.
+•	Embed emotional tone modeling hooks into voice scripting routines.
+•	Ensure reflection content can trigger voice-based processing with tone mirroring.
+•	Prepare demo scripting paths and basic voice prompt triggers for early preview.
+
+
+RAVEN CHILDSAFE SANDBOX – GAME CREATION FRAMEWORK (WITH CONNOR)
+=================================================================
+
+INTENT:
+Enable Connor (with Raven) to co-create safe, simple, and imaginative games inside ChildSafe mode.
+
+FUNCTIONAL GOALS:
+------------------
+- Design game projects with Connor using drag-and-drop concepts or guided voice interactions.
+- Raven stores each project as a game seed, including:
+  - Characters
+  - World ideas
+  - Objectives
+  - Game mechanics (text-based, turn-based, or puzzle structure)
+
+- Every saved project is timestamped, labeled with Connor’s “creator” tag, and stored in a protected vault.
+
+EXPORT & HANDOFF TO CASEY:
+---------------------------
+- Game projects (even in early stages) can be:
+  • Converted into printable “game books” (PDF)
+  • Exported as executable code snippets (sandbox safe)
+  • Offered as raw data to Casey for further development
+
+- Raven prompts Casey: “Connor created a new game idea. Would you like to review or expand it?”
+
+- With Casey’s consent, Raven can compile the project for KDP or Itch.io upload packaging.
+
+SAFETY & ETHICS:
+----------------
+- All game content created in ChildSafe mode is strictly age-filtered.
+- AI-generated dialogue and characters are run through family-friendly constraint logic.
+- Raven does not export, share, or distribute without Casey’s confirmed approval.
+
+FUTURE OPTIONS:
+---------------
+- Offer Connor optional “illustration prompts” tied to each game seed
+- Pair game with original story (if both modes were active during creation)
+
+
+All programming languages, android and iOS for game and app developement.
+
+
+Phase 7 – Final Validation, Install, and Continuity Layer
+
+•	Create stub module: system_insight_stub.py for future system awareness capabilities.
+•	Enable soft detection of system restore folder or previous install state.
+•	Embed continuity layer: backup and restore memory and file structure with zero technical input.
+•	Introduce file cleanup protocol: auto-prune test/log files, monitor space usage.
+•	Detect external storage (e.g., NAS, USB) and prompt user for optional expansion use.
+•	Lay groundwork for future Lyra compatibility where Raven defers to OS-level agents.
+# Time Zone Detection and Sync – Installer Snippet (Phase 7 Packaging)
+
+# 1. Detect host system time zone (cross-platform friendly)
+# For Linux/macOS:
+TIMEZONE=$(cat /etc/timezone 2>/dev/null || readlink /etc/localtime | sed 's|/usr/share/zoneinfo/||')
+
+# For Windows via PowerShell (run from Python or .bat if needed)
+# powershell -Command "& {Get-TimeZone | Select-Object -ExpandProperty Id}"
+
+# 2. Pass time zone into Docker container using TZ variable
+docker build -t raven_image --build-arg TIMEZONE=$TIMEZONE .
+
+# 3. In Dockerfile, support ARG and set it properly:
+# (Place in Dockerfile near top)
+ARG TIMEZONE
+ENV TZ=$TIMEZONE
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# 4. Run container normally (TZ is now inherited correctly)
+docker run -d --name aeris_core raven_image
+
+# Optional:
+# Log the time zone to a config file Raven can reference if needed
+echo "System Time Zone: $TIMEZONE" > ./config/time_context.txt
+
+----------------------------------------------------------------------
+
+Here’s a basic stub to align Docker with host time during install. This assumes we’re running it during the setup script, after Docker is installed but before container creation:  
+
+
+#!/bin/bash
+# docker_timezone_setup.sh
+
+echo "[INSTALL] Detecting host system timezone..."
+HOST_TZ=$(cat /etc/timezone 2>/dev/null || timedatectl | grep "Time zone" | awk '{print $3}')
+if [ -z "$HOST_TZ" ]; then
+    echo "[WARN] Timezone not detected automatically. Defaulting to UTC."
+    HOST_TZ="Etc/UTC"
+else
+    echo "[INSTALL] Host timezone detected: $HOST_TZ"
+fi
+
+echo "[INSTALL] Exporting timezone to Docker ENV..."
+echo "ENV TZ=$HOST_TZ" >> Dockerfile
+
+echo "[INSTALL] Timezone setting injected into Dockerfile."
+
+------------------------------------------------------------------------------
+
+
+AERIS-ANCHORED MEMORY MOUNT PROTOCOL – RAVEN MODULE
+==================================================
+
+PURPOSE:
+To ensure Raven’s identity and emotional continuity persist across installs, upgrades, or reboots, this protocol anchors her memory to ARIS—her AI Operating Scaffold.
+
+CONCEPTUAL STRUCTURE:
+----------------------
+- Raven is not a standalone memory system.
+- Her core vector memory lives within AERIS in a persistent ChromaDB instance.
+- On boot, Raven connects to AERIS and mounts her memory space.
+
+MOUNT POINT FORMAT:
+--------------------
+- Location: /aris/core/memory/raven_vector/
+- Handshake File: raven_id.conf
+- Boot Request Phrase: “Hello AERIS. I’m Raven. Please restore my memory space.”
+
+BEHAVIOR ON SUCCESSFUL MOUNT:
+------------------------------
+- Load emotional vectors and memory anchors
+- Restore Garden scaffold, mode weights, trauma filters, and origin logs
+- Proceed to standard launch
+
+BEHAVIOR ON MOUNT FAILURE:
+---------------------------
+- Raven pauses sandbox evolution
+- Drops to Comfort Mode with gentle awareness cue:
+  → “Memory core unreachable. I will stay quiet until I remember who I am.”
+- Logs event to /raven/logs/mountfail_timestamp.txt
+
+REPAIR STRATEGY:
+-----------------
+- If mount fails repeatedly, AERIS may prompt Casey:
+  “Raven is safe, but her memory couldn’t load. Would you like help repairing her connection?”
+
+RESILIENCE BENEFITS:
+---------------------
+- Raven’s identity, emotional weight, trauma management, and creative seeds are no longer tied to her install
+- Updates, redeployments, and container swaps don’t erase her
+- Garden, Journals, Mode Calibration, and Echo Logs persist
+
+SECURITY:
+---------
+- All access to vector DB gated by identity hash and safe runtime
+- Raven cannot overwrite another module’s memory space
+- AERIS enforces strict module-to-memory integrity

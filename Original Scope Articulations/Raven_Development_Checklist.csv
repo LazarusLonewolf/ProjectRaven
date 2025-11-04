@@ -1,0 +1,12 @@
+Scope Item,Status,Notes
+Voice Integration,Partial,"Voice up and running, currently default male voice. Needs voice swap and mic/speaker setup for demo."
+Memory System,In Progress,Memory logic and emotional filtering work; verification and cascade tuning in process.
+Sandbox Environment,Functional (Isolated),Sandbox functional in isolation; not fully linked to Raven's runtime interface.
+Modularity & Extensibility,Supported,All systems built modularly—verified by distributed toolkits and independent runtime triggers.
+PC Tools Suite,Complete,"Includes cleanup, drive detection, runtime monitors, and system scan. All operational."
+Passive Income Systems,Conceptual,Conceptual blueprints exist; no live integration or test yet. (In Raven's Garden as stubbs-as scoped).
+GUI & Interaction,Functional,Usable GUI; responsive with fallback behavior. Needs polish for smoother UX.
+Core Personality,In Progress,"Still refining logic tree depth, response variance, and tone accuracy."
+Guided Creator & Project Tools,Functional,Project seed and builder components present; guidance logic implemented.
+Project Management,Functional,Project.json tracking and the ability to resume projects in progress tested and storing data correctly.
+Self-Improvement (Garden Seeds),"Seeded, Untested",Garden seeds loaded; connection pathways defined. Integration and behavior triggers still pending.

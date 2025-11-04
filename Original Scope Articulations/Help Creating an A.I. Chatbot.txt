@@ -1,0 +1,39 @@
+Summary
+I hope you’re doing well. My name is Casey—a 46-year-old single father living with multiple sclerosis, CPTSD, and ADHD—and I’m reaching out because I need an expert no-code AI developer to help bring my vision to life.
+
+About the Project
+I’ve designed a highly modular AI chatbot/companion, “Raven,” for myself and my 9-year-old son to provide emotional support, daily planning assistance, creative brainstorming, and long-term life strategy. I’ve spent months drafting detailed blueprints and system specifications (which I’ll happily share) outlining a Phase-1 “core” that can:
+
+Adaptive LLM Core: Local model inference (Llama-2/MPT) with an emotional-intelligence and logical-reasoning layer
+
+Secure Memory Vault: Encrypted vector store to remember context, preferences, and emotional states across sessions
+
+Unified Persona Flow: One AI “body” with multiple modes (Comfort, Muse, Shadow, Intimacy, Child-Safe) selectable via a simple mode switch
+
+Consent & Safety: Safe-word/emergency lock, NSFW toggle outside Child-Safe, trauma-override auto-fallback, and full child-safe firewall
+
+Plugin Sandbox & Self-Upgrade: A WASM-based sandbox for module testing plus an admin UI to upload new spec docs or LoRA files so Raven can upgrade herself
+
+Upgrade Stubs: Placeholder hooks for future features like passive-income management, image/video generation, and app-scaffold templates
+
+Single TTS Voice: One consistent voice profile for all modes to simplify the UX
+
+Offline-First with Optional Online Fetch: Core runs locally with the option to pull approved assets or updates when permitted
+
+What I Need
+I don’t have the technical background to build this myself and would love to:
+
+Discuss the project scope, timeline, and your process
+
+Review my existing blueprints and documentation together
+
+Create a Phase-1 MVP: a self-contained Docker image or standalone app (Windows/Mac) that implements the core systems above, with stubs in place for later expansion
+
+Agree on deliverables, milestones, and an NDA/IP protection approach before sharing full specs
+
+My ideal partnership is with someone experienced in no-code AI platforms (Botpress, Dify, Flowise, etc.) who can deliver a robust, secure, and extendable AI companion. If this sounds like a good fit, could we set up a 20-minute call to explore details and your availability?
+
+Thank you for considering this project—I’m excited to collaborate and make Raven a reality for my family.
+
+Best regards,
+Casey

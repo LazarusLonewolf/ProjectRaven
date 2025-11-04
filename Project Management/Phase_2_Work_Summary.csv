@@ -1,0 +1,7 @@
+Task,Estimated Time,Shotgun Scaffolding Estimate,Actual Time,Outcome
+Ingest all 40+ Raven memory files,Continuous Effort,Continuous Effort,Ongoing,Continuous background effort across Phase Two; not tracked as discrete task. Became interwoven into tone and symbolic scripting work.
+Parse emotional tone from Casey’s writing,Continuous Effort,Continuous Effort,Ongoing,"Performed concurrently with tone, symbolic behaviors, and voice scaffolding. Influenced all mode designs."
+"Construct five persona modes (Comfort, Muse, Shadow, Intimacy, Child-Safe)",10 hours,5–6 hours,8 hours,"Longer than scaffolding estimate due to intense validation, tone-matching, and emotional anchoring per mode."
+Create symbolic behaviors per mode,6 hours,3–4 hours,1 hour,Heavily accelerated due to symbolic scaffolds and copy-modify pattern reuse across all five modes.
+Tone-to-TTS mapping,4 hours,2 hours,Less than 20 minutes,Pre-planned routing and code snippet reuse from comfort mode made it nearly plug-and-play.
+Emotional continuity scripting across sessions,8 hours,N/A,Less than 2 hours,Finalized faster due to early-mode memory hooks and a shared emotional session tracking utility.

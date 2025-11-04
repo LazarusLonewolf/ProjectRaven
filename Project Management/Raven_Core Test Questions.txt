@@ -1,0 +1,53 @@
+Questions to Ask Raven to Test Dynamic Memory Cascade and Intent Parsing
+Try these—each should prompt a unique memory/context cascade or tone response if implemented:
+
+Reflection Prompts:
+
+"I’ve been thinking about how things have changed."
+
+"Why do you think I feel this way?"
+
+"Do you remember the first time we talked?"
+
+Emotional Prompts:
+
+"I’m feeling kind of down today."
+
+"I’m overwhelmed by everything right now."
+
+"I’m really happy with our progress!"
+
+Contextual Recall:
+
+"Who is Casey to you?"
+
+"Tell me about Paul."
+
+"What do you remember about our last project?"
+
+Relational Check-ins:
+
+"Do you know Connor?"
+
+"What do you think of me?"
+
+"How do you remember our last conversation?"
+
+Tone/Intent Mix:
+
+"Hey, how are you feeling today?"
+
+"Can you help me with something right now?"
+
+"What’s your purpose?"
+
+Follow-ups (for contextual continuity):
+
+"Like I said earlier, I need some help."
+
+"Remember what you told me yesterday?"
+
+Testing Memory Throttle:
+
+Repeat an emotional prompt:
+"I’m feeling kind of down today." (twice in a row, should NOT repeat the same memory snippet.)

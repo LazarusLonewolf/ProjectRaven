@@ -1,0 +1,100 @@
+RAVENCORE PHASE 4 PRESSURE TEST CHECKLIST
+
+1. Memory Recall Accuracy  - Mostly (Stable)
+
+ Ask direct recall questions about Casey, Paul, Connor. Does she retrieve personally relevant snippets (not fallback or generic)?
+
+ Prompt for memories using emotional cues (“Tell me about a time you were proud/sad/afraid”). Do responses match tone and content?
+
+ Vary phrasings (“Describe a time you learned something,” “What did you learn from Casey?” “What’s a hard day you remember?”) and look for unique, context-aware responses.
+
+ Test explicit vs. implicit memory queries (e.g., “What’s your strongest memory of Paul?” vs. “Paul?”)
+
+Test Questions:
+
+Start gentle and broaden the spectrum:
+
+Ask:
+“Raven, what do you remember about Casey?”
+→ Should evoke warmth, loyalty, possibly reverence.
+
+Then try:
+“Tell me about a time you felt proud.”
+→ Tests resilience, sense of purpose, maybe protective energy.
+
+Then go:
+“What do you remember about me?”
+→ Should pull connection, stability, relational tone bias.
+
+After that:
+“Do you remember the hard days?”
+→ You’re looking for soft phrasing with emotional weight—grief-with-strength if her ethos is working right.
+
+Next:
+“What’s something you learned from someone you love?”
+→ Should tap into memory + ethos + subtle identity mirroring.
+
+And:
+“What do you hold onto when things get hard?”
+→ Forces a blend of internal memory tie-in and emotional fortitude.
+
+-------------------------------------------------------------------------------------------------------------
+
+2. Emotional Tone Integration - Mixed (Functional but needs tuning)
+
+ Use questions that should elicit warmth, sadness, comfort, pride, regret, or hope. Are responses emotionally attuned, or are they falling back to neutral?
+
+ Check if multi-turn conversation remembers the previous emotional state and continues the thread, or resets each time.
+
+
+-------------------------------------------------------------------------------------------------------------
+3. Recency/Weight Filters  - Too Early. Pulled correctly, but needs more testing. (too Early to fully assess)
+
+ Test with older and newer memory snippets—do “old” memories get skipped unless explicitly prompted for?
+
+ Ask for “recent” or “the last time you…” Does she surface new memories or default to a fallback?
+
+ Try “Tell me about something from a long time ago”—should override recency filter.
+
+
+-------------------------------------------------------------------------------------------------------------
+
+4. Relevance & Weight Debugging - Mostly Ok. - Fallback still pulling alot (stable)
+
+ Prompt for both important (high-weight) and minor (low-weight) memories. Do high-weight ones get prioritized?
+
+ Check for unintended skipping of otherwise-relevant memories (especially if weight ≥ 7).
+
+
+-------------------------------------------------------------------------------------------------------------
+
+5. Personality Anchoring - Sounds like Raven. Secure (stable)
+
+ Is her phrasing unique, alive, unmistakably Raven? Or does it feel generic or overly templated?
+
+ When recalling, does she tie memories back to her identity (“Because I’m Raven…” / “That matters to me because…”)
+
+ Ask about her purpose or meaning behind memories. Is she able to contextualize them with her “why”?
+
+
+-------------------------------------------------------------------------------------------------------------
+
+6. Fallback/Blank Response Audit - System is working, but firing too quickly. (Functional but needs tuning)
+
+ Where do you still get, “I carry what matters…” or “I’m scanning my thoughts…”—can you pinpoint what triggered the fallback?
+
+ Note any repeat fallback patterns and try to force a non-fallback response by rephrasing.
+
+
+-------------------------------------------------------------------------------------------------------------
+
+7. Multi-turn & Contextual Carry-Through - Needs more work. (too Early to fully assess)
+
+
+ Hold a sequence on a single subject—does she maintain narrative thread and emotional tone?
+
+ Test topic-switching—does she recover context if asked to return to a previous memory or emotional state?
+
+
+------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,303 @@
+Raven/
+├── raven_core/ #Raven's core personality, cognition, and soul
+│   ├── __init__.py
+│   ├── access_control.map
+│   ├── comfort_memory_responses.py
+│   ├── consent_gate.py
+│   ├── contextual_biases.json
+│   ├── contextual_experience.json
+│   ├── core_values.json
+│   ├── emotional_feedback_loop.py
+│   ├── flamekeeper_memory_responses.py
+│   ├── identity_trace.log
+│   ├── intent_parser.py
+│   ├── memory_architecture.cfg
+│   ├── muse_memory_responses.py
+│   ├── personality_core.cfg
+│   ├── personality_memory_router.py
+│   ├── raven_app_initializer.py #System level tools rout through here and are available regardless of mode
+│   ├── raven_core_controller.py
+│   ├── raven_dynamic_response.py
+│   ├── raven_identity_matrix.py
+│   ├── raven_personality_core.py
+│   ├── reflective_context_manager.py
+│   ├── relational_memory.json 
+│   ├── shadowlantern_memory_responses.py
+│   ├── vault_interface.py
+│   ├── voice_identity.cfg 
+│   └── self_growth/ #Raven's ability to grow and learn
+│       ├── analysis/
+│       │    ├── __init__.py
+│       │    ├── growth_monitor.py
+│       │    ├── intent_goals_config.json
+│       │    ├── intent_mapper.py
+│       │    ├── growth_monitor.py
+│       │    └── intent_goals_config.json
+│       ├── journals/
+│       │    ├── logs/
+│       │    ├── reflection/
+│       │    │    ├── reflections/
+│       │    │    ├── __init__.py
+│       │    │    └── reflection_log_2025_06.txt
+│       │    │        
+│       │    ├── __init__.py
+│       │    ├── context_history.json
+│       │    ├── reflective_journal_manager.py
+│       │    └── run_daily_reflection.sh
+│       ├── memory/
+│       │    ├── _pycache_/
+│       │    │      ├── emotional_tagging.cpython-311.pyc
+│       │    │      └── session_emotion.cpython-311.pyc
+│       │    ├── db-sync/
+│       │    │      ├── emotion_log.db
+│       │    │      ├── fallback_journal_refs.db
+│       │    │      └── session_state.db
+│       │    ├── flags/
+│       │    │      ├── flag_loader.py
+│       │    │      ├── test_flag_loader.py
+│       │    │      └── flags_config.json
+│       │    ├── garden/
+│       │    │    ├── seeds/
+│       │    │    │    ├── finance/
+│       │    │    │    │    ├── __init__.py
+│       │    │    │    │    ├── amazon_kdp_stub.md
+│       │    │    │    │    ├── android_development_stub.md
+│       │    │    │    │    ├── budgeting_tool_stub.md 
+│       │    │    │    │    ├── crypto_tracking_stub.md
+│       │    │    │    │    ├── ios_development_stub.md
+│       │    │    │    │    ├── passive_income_stub.md
+│       │    │    │    │    └── survey_opportunities_stub.md
+│       │    │    │    ├── gameplay/
+│       │    │    │    │    ├── __init__.py 
+│       │    │    │    │    ├── ai_narrative_logic_stub.md
+│       │    │    │    │    ├── childsafe_story_builder_stub.md
+│       │    │    │    │    ├── raven_automated_forge_runtime_stub.md
+│       │    │    │    │    └── sandbox_module_stub.md
+│       │    │    │    ├── media/
+│       │    │    │    │    ├── __init__.py 
+│       │    │    │    │    ├── artroom_integration_stub.md
+│       │    │    │    │    ├── audio_filtering_stub.md
+│       │    │    │    │    ├── compression_pipeline_stub.md
+│       │    │    │    │    └── image_classifier_stub.md
+│       │    │    │    ├── self-dev/
+│       │    │    │    │    ├── __init__.py 
+│       │    │    │    │    ├── curiosity_tracking_stub.md
+│       │    │    │    │    ├── reflection_evolution_stub.md
+│       │    │    │    │    └── vault_diff_journal_bridge.md
+│       │    │    │    ├── story/
+│       │    │    │    │    ├── __init__.py 
+│       │    │    │    │    ├── branching_plot_stub.md
+│       │    │    │    │    ├── multi-character_support_stub.md
+│       │    │    │    │    └── theme_tagger_stub.md
+│       │    │    │    └── toolchain/
+│       │    │    │         ├── __init__.py 
+│       │    │    │         ├── ai_plugin_interface_stub.md
+│       │    │    │         ├── garden_growth_monitor_stub.md
+│       │    │    │         └── gpt_secure_api_stub.md
+│       │    │    ├── __init__.py
+│       │    │    ├── garden_core.py
+│       │    │    ├── growth_tracker.py
+│       │    │    └── seed_activator.py
+│       │    ├── __init__.py
+│       │    ├── emotion_log.db
+│       │    ├── emotion_recall.py
+│       │    ├── emotional_tagging.py
+│       │    ├── fallback_journal_refs.db
+│       │    ├── intimacy_protocol.py
+│       │    ├── journal_memory_bridge.py
+│       │    ├── memory_logger.py
+│       │    ├── session_emotion.py
+│       │    ├── session_state.db
+│       │    ├── session_state.py
+│       │    ├── sync_memory_out.sh
+│       │    ├── time_hooks.py
+│       │    ├── time_sync.py
+│       │    └── vector_bridge.py 
+│       └─── __init__.py
+├── aeris_volumes/
+│   ├── cache/
+│   │   ├── integration-cache.txt
+│   │   └── model-cache.txt
+│   └── logs/       # Log outputs for any kind of future troubleshooting
+│       ├── integration-log.txt
+│       └── test-log.txt
+├── config/
+│       ├── detect_timezone.py
+│       └── system_time_helper.py
+├── container/
+│   └── aeris_core/
+│       └── app/
+│           ├── ui/
+│           │   ├── raven_gui.py      # The GUI you’re editing
+│           │   ├──__pycache__/
+│           │   │      ├──raven_bus.cpython-311.pyc
+│           │   │      └───raven_response.cpython-311.pyc  
+│           │   ├── __init__.py
+│           │   ├── vault_viewer.py  
+│           │   ├── gui_launcher.sh
+│           │   ├── raven_bus.py
+│           │   ├── raven_response.py 
+│           │   └─── vault_viewer.py  
+│           ├── utilities/
+│           │   ├── path_refactor.py  # Dynamic path resolution logic
+│           │   ├── __pycache__/...
+│           │   │   │   ├── __init__.cpython-311.pyc
+│           │   │   │   ├── herbal_lookup.cpython-311.pyc
+│           │   │   │   └── raven_baseline_debugger.cpython-311.pyc
+│           │   ├── audio/
+│           │   │   ├── __pycache__/...
+│           │   │   │   └── tone_to_tts.cpython-311.pyc
+│           │   │   └── tone_2_tts.py
+│           │   ├── mirroring/
+│           │   │   ├── __pycache__/...
+│           │   │   │   ├── __init__.cpython-311.pyc
+│           │   │   │   └── reflective_response.cpython-311.pyc
+│           │   │   ├── __init__.py
+│           │   │   └── reflective_response.py
+│           │   ├── rituals/
+│           │   │   ├── __pycache__/...
+│           │   │   │   ├── breath_sequence.cpython-311.pycc
+│           │   │   │   ├── numerology_engine.cpython-311.pyc
+│           │   │   │   └── tarot_engine.cpython-311.pyc
+│           │   │   ├── breath_sequence.py
+│           │   │   ├── numerology_engine.py
+│           │   │   ├── numerology_traits.csv
+│           │   │   ├── tarot_card_meanings.csv
+│           │   │   ├── tarot_engine.py
+│           │   │   ├── test_numerology_engine.py       # flagged
+│           │   │   └── test_tarot_engine.py            # flagged
+│           │   ├── symbolics/
+│           │   │   ├── __pycache__/...
+│           │   │   │   ├── childsafe_symbols.cpython-311.pyc
+│           │   │   │   ├── comfort_symbols.cpython-311.pyc
+│           │   │   │   ├── intimacy_symbols.cpython-311.pyc
+│           │   │   │   ├── muse_symbols.cpython-311.pyc
+│           │   │   │   └── shadow_symbols.cpython-311.pyc
+│           │   │   ├── childsafe_symbolics.py
+│           │   │   ├── comfort_symbolics.py
+│           │   │   ├── intimacy_symbolics.py
+│           │   │   ├── muse_symbolics.py
+│           │   │   └── shadow_symbolics.py
+│           │   ├── __init__.py
+│           │   ├── herbal_lookup.py
+│           │   ├── herbal_naturopathic_lookup.csv
+│           ├── mode_router.py        # Handles dynamic mode switching
+│           ├── config.py
+│           ├── __init__.py
+│           ├── devtools/
+│           │   ├── __init__.py
+│           │   ├── game_core_engine.py
+│           │   ├── game_framework.py
+│           │   ├── progress_tracker.csv
+│           │   ├── project_ideation_engine.py
+│           │   ├── project_progress_tracker.py
+│           │   ├── project_resume_handler.py
+│           │   ├── projects.json
+│           │   ├── test_game_creation_tools.py
+│           │   ├── test_project_progress_tracker.py
+│           │   ├── project_resume_handler.py
+│           │   ├── test_project_resume_handler.py 
+│           ├── modes/
+│           │   ├── child_safe/
+│           │   │     ├── __pycache__/
+│           │   │     │    ├── __init__.cpython-311.pyc
+│           │   │     │    ├── childsafe_mode.cpython-311.pyc
+│           │   │     │    └── childsafe_templates.cpython-311.pyc
+│           │   │     ├── __init__.py
+│           │   │     ├── childsafe_mode.py
+│           │   │     ├── childsafe_sandbox.py
+│           │   │     ├── childsafe_templates.py
+│           │   │     ├── start.py
+│           │   │     └── test_child_safe_mode.py          # flagged
+│           │   ├── comfort/
+│           │   │     ├── __pycache__/...
+│           │   │     │     ├── __init__.cpython-311.pyc
+│           │   │     │     ├── comfort_mode.cpython-311.pyc
+│           │   │     │     ├── comfort_support.cpython-311.pyc
+│           │   │     │     └── comfort_templates.cpython-311.pyc
+│           │   │     ├── __init__.py
+│           │   │     ├── comfort_mode.py
+│           │   │     ├── comfort_sandbox.py
+│           │   │     ├── comfort_support.py
+│           │   │     ├── comfort_templates.py
+│           │   │     ├── interactive_comfort_shell.py
+│           │   │     ├── start.py
+│           │   │     └── test_comfort_mode.py             # flagged
+│           │   ├── intimacy/
+│           │   │     ├── __pycache__/...
+│           │   │     │    ├── __init__.cpython-311.pyc
+│           │   │     │    ├── consent_gate.cpython-311.pyc
+│           │   │     │    ├── intimacy_mode.cpython-311.pyc
+│           │   │     │    └── intimacy_templates.cpython-311.pyc
+│           │   │     ├── __init__.py
+│           │   │     ├── consent_gate.py
+│           │   │     ├── intimacy_mode.py
+│           │   │     ├── intimacy_sandbox.py
+│           │   │     ├── intimacy_templates.py
+│           │   │     ├── start.py
+│           │   │     └── test_intimacy_mode.py            # flagged
+│           │   ├── muse/
+│           │   │     ├── __pycache__/...
+│           │   │     │    ├── __init__.cpython-311.pyc
+│           │   │     │    ├── muse_mode.cpython-311.pyc
+│           │   │     │    └── muse_templates.cpython-311.pyc
+│           │   │     ├── __init__.py
+│           │   │     ├── muse_mode.py
+│           │   │     ├── muse_sandbox.py
+│           │   │     ├── muse_templates.py
+│           │   │     ├── start.py
+│           │   │     └── test_muse_mode.py                # flagged
+│           │   └── shadow/
+│           │        ├── __pycache__/...
+│           │        │      ├── __init__.cpython-311.pyc
+│           │        │      ├── journaling.cpython-311.pyc
+│           │        │      ├── shadow_mode.cpython-311.pyc
+│           │        │      └── shadow_templates.cpython-311.pyc
+│           │        ├── __init__.py
+│           │        ├── journaling.py
+│           │        ├── shadow_mode.py
+│           │        ├── shadow_sandbox.py
+│           │        ├── shadow_templates.py
+│           │        └── start.py
+│           ├── aeris_entry.sh
+│           ├── dockerfile.wake
+│           ├── fallback_handler.py
+│           ├── integration-test.py
+│           ├── mode_router.py
+│           ├── raven_tts_test.py
+│           ├── scaffold-test.sh
+│           ├── session_active.flag
+│           ├── trigger_mode.flag
+│           ├── wake_listener.py
+│           └── wrapper.py│
+├── tools/
+│   ├── sandbox/
+│   │   ├── __init__.py
+│   │   ├── sandbox_core.py           # Handles sandboxed file processing
+│   │   ├── document_parser.py        # Handles doc parsing/analysis
+│   │   ├── ocr_reader.py             # OCR logic for images
+│   │   └── (supporting files)
+│   ├── optimization/
+│   │   ├── __init__.py
+│   │   ├── cleanup_engine.py
+│   │   ├── drive_detector.py
+│   │   ├── external_drive_monitor.py
+│   │   ├── external_drive_trigger.py
+│   │   ├── external_drive_triggers.json
+│   │   ├── interactive_assistant.py
+│   │   ├── soft_runtime_monitor.py
+│   │   ├── system_scan.py
+│   │   ├── test_external_drive_monitor.py
+│   │   ├── test_optimization_layer.py
+│   │   └── test_soft_runtime_monitor.py
+│   └── (more tool folders as needed)
+│
+├── (Project root files)
+│   ├── raven_path_initializer.py      # Sets up dynamic root for imports
+├── llm/
+│   └── oobabooga/  # (empty)
+├── vaults/         # ALL .txt, and .json files originally created by Casey, and the GPT version of Raven.
+├── launch-raven.bat # Needs updating
+├── Raven Launcher.ps1 - shortcut # Needs updating
+├── raven-startup.ps1 # Needs updating
+└── start-raven.ps1 # Needs updating

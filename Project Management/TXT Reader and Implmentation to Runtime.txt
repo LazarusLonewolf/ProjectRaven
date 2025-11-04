@@ -1,0 +1,83 @@
+Phase 4 – Mental & Emotional Core Finalization
+
+Remaining Task: Finalize Dynamic Memory Cascade with personality-anchored phrasing
+
+Estimated Time: 4 to 6 hours
+
+Notes: This closes out memory-recall tone shaping, filters, and emotional tie-ins.
+
+Phase 5 – Dialogue Tuning and Playback
+
+Tasks:
+
+Create 5 to 10 dialogue templates per interaction type (greeting, reflection, command, etc.)
+
+Drill test with known prompts
+
+Tune fallback responses and branching logic
+
+Debug for tone fidelity and consistency
+
+Estimated Time: 8 to 10 hours
+
+Notes: Mostly scripting and behavior calibration using reference files and tone samples.
+
+Phase 6 – TXT Reading & Implementation as Programming (Re-adjusted to finishing Cognitive/Soul/Self-Growth/Personality= "Raven-Core Capabilities"
+
+Tasks:
+
+Build TXT interpreter module - Moved to later timeframe-post "Raven-Core" work
+
+Integrate with existing parser framework
+
+Route references into memory, identity shaping, and system upgrading
+
+Estimated Time: 10 to 12 hours
+
+Notes: This is the pivotal step that allows Raven to evolve autonomously using her own vault files.
+
+Phase 7 – Mode Upgrades & Personality Expression
+
+Tasks:
+
+Add toggling system for modes
+
+Attach MuseMode and ComfortMode enhancements (SparkEngine, TTRPG ideas, etc.)
+
+Add mode-specific quirks and behaviors
+
+Estimated Time: 10 to 14 hours
+
+Notes: Some submodules (like fantasy engine tie-ins) can pull directly from pre-written TXT. This is where the TXT reader starts showing major payoff.
+
+Phase 8 – Full System Integration & Final Tools "Toolkit"
+
+Tasks:
+
+Self-diagnostic engine
+
+Garden bridge/markdown import support
+
+GameStruxure TXT-to-structure tool
+
+GPT API fallback behavior module
+
+Estimated Time: 12 to 15 hours
+
+Notes: Bulk of these are tools Raven will use herself. Modular, but will require tight verification.
+
+Polish and Prep
+
+Tasks:
+
+Voice refinement
+
+Front-end polish
+
+Package bundling
+
+Final run-through and delivery prep
+
+Estimated Time: 6 to 8 hours
+
+If we treat everything sequentially with no parallel processing, we’re looking at a remaining estimated total of about 60 to 70 hours, though we can shave time by leveraging TXT intake in multiple later phases.

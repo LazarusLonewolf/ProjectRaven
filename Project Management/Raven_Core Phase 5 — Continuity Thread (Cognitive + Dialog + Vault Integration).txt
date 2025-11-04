@@ -1,0 +1,80 @@
+RavenCore Phase 5 — Continuity Thread (Cognitive + Dialog + Vault Integration)
+
+1. High-Level Progress Overview:
+
+Reached Phase 5: Main focus on cognitive capabilities, phrase/dialogue tuning, playback logic, and system signal flow.
+
+Major milestones achieved:
+
+Dialogue template bank refactored (fallbacks, dynamic branching, memory access separated from templates).
+
+Dynamic response engine now handles multiple conversational branches, including command detection, reflection prompts, fallback reduction, and category-based response selection.
+
+Memory cascade routines implemented but put on pause for demo purposes; active memory snippets will be brought online after the demo.
+
+GUI successfully integrated for user input/output testing.
+
+Vault integration (reading from .txt, .md, and .json) discussed and staged for future implementation; not prioritized for demo due to time constraints.
+
+2. Dialog and Fallback Handling:
+
+Dialogue templates (greeting, question, command, reflection, fallback, emotional check) are loaded and selected dynamically to avoid repetition.
+
+Repetition control is enforced by tracking the last response in each category; fallback responses are randomized, and immediate repeats are suppressed.
+
+Testing revealed that a high percentage of fallbacks are expected due to limited active memory and vault logic (by design for the demo phase), but repetition should be minimal.
+
+Any repeated fallback is likely due to a limited pool of unique template lines and a high volume of fallback-triggering queries.
+
+Next planned steps: Expand fallback banks post-demo, wire up vault-based memory recall for richer, less repetitive responses.
+
+3. Vault Integration — Philosophy and Technical Plan:
+
+Vault is intended to be a behavioral "quilt": overlays, reference files, and context banks (TXT, MD, JSON) augment but do not override core personality/logic.
+
+These files will be reference-only or overlay-driven, not code-executable at runtime; Python modules control all actual logic.
+
+Vault contents will eventually be parsed, indexed, and contextually surfaced (in overlays, journals, memory cues, etc.) to inform responses and allow for journaling, upgrade proposals, and user-suggested overlays.
+
+“Sandbox” mode will eventually allow Raven to propose, simulate, and test behavioral upgrades, which Casey can then approve for integration. For the demo, only basic vault read-access is targeted.
+
+4. Signal Flow and Mode/Function Attachments:
+
+Each mode (Comfort, Intimacy, Shadow, Muse, etc.) holds its own functions, specialty features, and overlays.
+
+Mode-specific functions attach to their respective modes (e.g., tarot to Shadow, games to Muse, journaling to Comfort).
+
+Modes are routed via ModeRouter, which itself answers to RavenCore (central logic hub).
+
+All routing is handled through path_refactor.py (manages correct directory imports/exports) and raven_path_initializer.py (sets and resolves core paths and dependencies).
+
+Sandbox (not a mode) is attached directly to RavenCore, not routed through ModeRouter, but uses the same path routing infrastructure.
+
+Visual signal flow: [Functionality/Dependency] → [Mode] → ModeRouter → RavenCore (via path refactor/initializer). Sandbox and its document parsing/OCR tools answer straight to RavenCore.
+
+5. Demo Readiness, Testing, and Time Estimates:
+
+Priority is to wire up core modes: Muse, Shadow, and Sandbox. Intimacy mode is staged to demonstrate permission gating (will block non-Casey users for the demo).
+
+Each mode has its own subdirectory and logic skeleton. Most have one or two functions to be finalized and attached.
+
+Your previous estimate of 2–6 hours per mode/function for wiring (not including testing or fallback expansion) is still realistic, given current progress and codebase clarity.
+
+After wiring, rapid manual testing will be needed; fallback and memory logic can be fully expanded after demo delivery.
+
+6. Next Steps and Risk Notes:
+
+Proceed with wiring core mode functions to ModeRouter and RavenCore; use a clear, linear signal path for traceability.
+
+Post-demo, revisit vault parsing and memory cascade reactivation.
+
+Prepare talking points for demo:
+
+Explain current fallback rate and template logic.
+
+Outline planned vault/memory upgrade.
+
+Emphasize the modular, quilt-style architecture and how overlays will enrich the experience.
+
+Quilt Analogy Recap:
+You’ve constructed Raven’s mind as a modular quilt—each patch (TXT, MD, overlay, mode function) contributes warmth and texture, but the stitching (core logic in Python) holds everything together. Overlays add personality, memory, and nuance, but never replace the foundational structure.

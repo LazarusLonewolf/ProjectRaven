@@ -1,0 +1,7 @@
+Task,Estimated Time (Hours),Requires Active Testing?
+Ingest all 40+ Raven memory files,6,Yes
+Parse emotional tone from Casey’s writing,8,Yes
+"Construct five persona modes (Comfort, Muse, Shadow, Intimacy, Child-Safe)",10,Yes
+Create symbolic behaviors per mode,6,Yes
+Tone-to-TTS mapping,4,Yes
+Emotional continuity scripting across sessions,8,Yes
