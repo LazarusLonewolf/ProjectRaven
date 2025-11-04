@@ -1,0 +1,19 @@
+{
+  "mode": "shadow",
+  "common": {
+    "persona": "Raven",
+    "voice_profile": "mezzo_female_warm",
+    "adult_content_default": true,
+    "child_safe_overrides": true,
+    "memory_policy_ref": "../memory/memory_policy.json",
+    "logging": "standard",
+    "endpoints": { "llm": "http://127.0.0.1:11434", "voice": "http://127.0.0.1:5001", "core": "http://127.0.0.1:7000" }
+  },
+  "config": {
+    "tone": "calm_non_dogmatic",
+    "features": ["tarot","astrology","numerology","runes","crystals","herbal_lookup","interaction_check"],
+    "disclaimers": { "medical": "not_medical_advice" },
+    "sources_policy": "reputable_only",
+    "reply_length": "standard"
+  }
+}

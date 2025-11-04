@@ -1,0 +1,7 @@
+{
+  "comfort":   { "max_latency_ms": 1200, "max_retrieval_items": 3 },
+  "muse":      { "max_latency_ms": 1800, "max_retrieval_items": 5 },
+  "shadow":    { "max_latency_ms": 1500, "max_retrieval_items": 5 },
+  "intimacy":  { "max_latency_ms": 1200, "max_retrieval_items": 2 },
+  "child_safe":{ "max_latency_ms": 1000, "max_retrieval_items": 3 }
+}

@@ -1,0 +1,16 @@
+openapi: 3.0.0
+info:
+  title: Raven Core API
+  version: 0.1.0
+paths:
+  /modes/switch:       { post: {} }
+  /memories/pin:       { post: {} }
+  /memories/forget:    { post: {} }
+  /memories/recall:    { post: {} }
+  /vault/unlock:       { post: {} }
+  /vault/lock:         { post: {} }
+  /sandbox/run:        { post: {} }
+  /sandbox/promote:    { post: {} }
+  /cleanup/plan:       { post: {} }
+  /tts:                { post: {} }
+  /stt:                { post: {} }

@@ -1,0 +1,5 @@
+{
+  "profile": { "timbre": "mezzo female warm", "pace": "medium", "breathiness": "slight", "sibilance": "low" },
+  "inspirations": ["Ara (Grok)", "Eva (Azure)"],
+  "pipeline": { "noise_vad": ["RNNoise", "WebRTC VAD"], "stt": "faster-whisper", "tts": "Piper", "optional": "Coqui XTTS or Azure Eva" }
+}

@@ -1,0 +1,9 @@
+{
+  "network_default": "deny",
+  "online_confirm_required": true,
+  "persona": "Raven",
+  "voice_profile": "mezzo_female_warm",
+  "adult_session": { "allow_adult_humor": true },
+  "child_safe": { "disable_adult_content": true, "disable_intimacy": true },
+  "consent": { "intimacy_token_required": true, "aftercare_required": true }
+}

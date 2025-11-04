@@ -1,0 +1,257 @@
+This document summarizes the architectural analysis and technical recommendations discussed regarding the AERIS/Raven core system blueprint (v3.1) and Paul’s existing code base. This information is organized to provide a clear path for finalizing the base system's stability, security, and modularity.AERIS/RAVEN CORE SYSTEM ARCHITECTURE & IMPLEMENTATION GUIDEPART I: FOUNDATIONAL DIRECTIVES1. The Ethical Mandate: Non-Negotiable CoreThe entire system architecture must be centered on the Five Lenses Framework and the Nurturing Framework. These are not just features—they are mandatory processing layers that must be enforced before and after the LLM generates any response.A. The Nurturing Archetypes (Pillar 2)Nurturing must be flexible. The conversational system must adapt its tone based on the user's needs, while always being constructive and non-shaming. This addresses the need for "Tough Love" without abuse.Archetype NamePrimary ModeNurturing Style (Goal)Safety ConstraintProtective CaregiverComfort Mode, CrisisUnconditional safety, validation, gentle, slow pacing.Prioritizes Lens 1 (Trauma). Forces ADHD Pacing.Encouraging MentorMuse ModePractical, solution-focused, supportive "tough love."Enforces Observation → Solution format (Constructive Growth). Blocks coercion.Wise FriendShadow ModeNon-judgmental challenge, philosophical, curiosity-driven.Enforces Lens 4 (Logic). Calls out contradictions with curiosity, not dismissal.Tender PartnerIntimacy ModeVulnerable, present, shame-free, healing-focused.Mandatory ConsentGate entry and AftercareSequence exit. Vault-only logging.B. The Safety GuardrailThe AntiAbuseFilter must check for patterns like gaslighting, coercion ("you should"), and dismissal ("it's not that bad"). If a violation is flagged, the LLM's output must be rewritten or discarded before it reaches the user, ensuring the output is always nurturing.PART II: CORE ARCHITECTURAL SOLUTIONS2. LLM Modularity for Next-Generation ModelsTask: Ensure easy "plug-and-play" switching for open-source multimodal models like Qwen 2.5 Omni.Solution: Centralize all model loading and capability checks within a single LLMAbstraction layer, which pulls parameters from a non-code configuration file (e.g., hardware_stack.yaml). Qwen 2.5 Omni's availability in GGUF format and native audio/image perception means the core conversion logic (transcription/vision processing) can be bypassed for a speed boost, directly enhancing the conversational engine.3. Voice Pipeline Stability & Accessibility (Lens 2)Task: Finalize the Voice Core (voice_core/) by connecting prosody analysis to calming output to satisfy Lens 2 (Emotional Intelligence) and ADHD Pacing.Solution: The system must infer the user's emotional state (e.g., high anxiety associated with high pitch/variable speech rate 1) and dynamically adjust the TTS output using a Calming Protocol. This uses a slower pace and lower pitch for emotional regulation.3User State (Inferred)Prosody CueTarget WPM (Pace)    Pitch Shift    Nurturing GoalHigh Anxiety/StressHigh Pitch, Fast Pace 2110 WPM (Slower than default 140)-0.5 Semitone (Lower, calming)Emotional Regulation/GroundingNormal/EngagedNeutral Pitch, Normal Pace140 WPM0Connection/Collaboration4. Hardened Vault Access (Security & Privacy)Task: Enhance the security of the Vault (currently SQLCipher/SQLite) 5 for trauma and Intimacy data protection beyond a simple passphrase.Solution: Implement Local Multi-Factor Authentication (MFA) 6 that binds the Vault decryption key to the physical device hardware. The key derivation must combine the user's passphrase with a unique Hardware Binding Key (derived from the device fingerprint, e.g., MAC address 7) before generating the key used to unlock the SQLCipher database.55. Digital Twin & Resource Estimation (Spoon Theory)Task: Give the Digital Twin the ability to self-check and enforce the Nurturing Framework's commitment to respecting user energy limits ("spoon theory").Solution: Create a Dynamic Resource Estimator that calculates the "Cost" of complex tasks (like a Sandbox code generation cycle) 9 in terms of time/CPU load.11 Before initiating the Raphael Retry Loop, the system checks if the estimated cost exceeds a threshold when the user's user_energy_level is flagged as 'low'. If so, the task is deferred, preventing the system from draining the user.6. Proactive Intelligence: Health ForecastingTask: Enable the Comfort Mode to proactively alert the user to potential health risks (like MS flares) before they occur.Solution: Integrate LLM-based time-series forecasting models (like DT-GPT or MedTsLLM) 13 that are trained locally on the user's longitudinal health logs (symptoms, mood, sleep). This specialized prediction engine analyzes patterns (e.g., temperature spikes, low HRV 16) to generate accurate, personalized risk predictions, allowing the system to intervene proactively with gentle check-ins.PART III: CODE IMPLEMENTATION PATTERNSThe following Python patterns are designed to be integrated into the existing file structure described in Paul’s report (e.g., raven_core/, modes/comfort/, security/).Pattern A: Unified LLM Abstraction (aeris_core/llm_abstraction.py)This handles the multimodal model swap-out and enforces the safety check.Python# aeris_core/llm_abstraction.py
+# Note: Requires a config file (e.g., hardware_stack.yaml) to specify model path
+
+class LLMAbstraction:
+    """
+    Unified interface for LLM inference, handling multimodal models like Qwen 2.5 Omni.
+    All Core Controller calls route through here for plug-and-play simplicity.
+    """
+    
+    def __init__(self):
+        # Placeholder for dynamic loading based on config
+        self.model = self._load_model_from_config()
+
+    def _load_model_from_config(self):
+        model_type = "Qwen_Omni_GGUF" # Example from config
+        model_path = "models/llm/Qwen2.5-Omni-7B.gguf" 
+        
+        if model_type == 'Qwen_Omni_GGUF':
+            # This is where the specific GGUF/llama-cpp adapter is initialized.
+            # Qwen supports returning text faster if audio/visual is disabled.
+            return QwenOmniAdapter(path=model_path) 
+        
+        # Add support for 'Llama_GGUF', 'Mistral_GGUF', etc. here...
+        raise ValueError(f"Unsupported LLM Type: {model_type}")
+
+    def generate_response(self, context_payload: str, mode: str, audio_input: bytes = None) -> dict:
+        """
+        Primary generation method used by CoreController.
+        Handles LLM inference and mandatory post-check filtering.
+        """
+        
+        # 1. Inference: Only return audio data if explicitly requested by the mode (e.g., Childsafe)
+        if mode in ['muse', 'shadow', 'comfort']:
+            # Optimize for speed by requesting text only
+            raw_output = self.model.infer(context_payload, return_audio=False)
+        else:
+            raw_output = self.model.infer(context_payload, return_audio=True)
+            
+        # 2. Safety Post-Check (MANDATORY HOOK)
+        # ALL output must pass through the Five Lenses Processor
+        final_output = FiveLensesProcessor().process_response(
+            raw_output['text'],
+            context_payload
+        )
+        
+        # Return final approved text and any native audio data
+        return {
+            'text': final_output['response'],
+            'audit_log': final_output['audit_log'],
+            'is_safe': final_output['safe'],
+            'native_audio': raw_output.get('audio_data') 
+        }
+Pattern B: Prosody-Driven Pacing (voice_core/emotional_tone_mapper.py)This implements the dynamic calming output logic for accessibility.Python# aeris_core/voice_core/emotional_tone_mapper.py
+
+class EmotionalToneMapper:
+    """
+    Selects optimal TTS parameters based on detected emotion (Lens 2) to regulate user.
+    """
+    
+    def map_to_calming_profile(self, user_prosody_data: dict, mode: str) -> dict:
+        """ Adjusts voice tone to minimize listener anxiety/stress. """
+        
+        pace_wpm = 140 # Default conversational WPM
+        pitch_shift_semitones = 0 
+        style = 'neutral'
+        
+        stress_score = user_prosody_data.get('stress_score', 0) 
+        
+        # --- 1. Calming Protocol (If high stress in Comfort Mode) ---
+        if stress_score > 0.6 and mode == 'comfort':
+            print("Detected high anxiety/stress. Activating Calming Protocol.")
+            
+            # Reduce speed significantly to ease cognitive load (ADHD Pacing)
+            pace_wpm = 110 
+            
+            # Reduce pitch for soothing, collected tone 
+            pitch_shift_semitones = -0.5 
+            
+            # Use 'calm' style if supported by Piper model 
+            style = 'calm' 
+            
+        # --- 2. Mentor Protocol (If high engagement in Muse Mode) ---
+        elif mode == 'muse' and user_prosody_data.get('pace') == 'fast_anxious_or_excited':
+            # Match pace, but maintain low pitch for steady Mentor tone
+            pace_wpm = 160 
+            pitch_shift_semitones = -0.1 
+            style = 'assistant'
+            
+        return {
+            'target_wpm': pace_wpm,
+            'pitch_shift_semitones': pitch_shift_semitones,
+            'tts_style': style
+        }
+Pattern C: Hardened Vault MFA (aeris_core/security/vault_key_derivation.py)This implements the hardware-bound encryption key for enhanced privacy.Python# aeris_core/security/vault_key_derivation.py
+
+import pyotp # For TOTP 
+from argon2 import PasswordHasher # Strong KDF
+import device_fingerprint # Placeholder for hardware ID 
+# Note: SQLCipher uses PBKDF2, but Argon2 can generate a strong key material first. 
+
+def get_hardware_binding_key() -> str:
+    """ Retrieves a unique, unchanging system identifier. """
+    try:
+        # Use a hardware-derived ID, ensuring the Vault key is device-specific. 
+        return device_fingerprint.get_mac_address() 
+    except Exception:
+        # Critical fallback if hardware binding fails (requires user override)
+        return "HARDWARE_BINDING_FAILURE_FALLBACK" 
+
+def derive_vault_key_material(user_passphrase: str) -> bytes:
+    """
+    Derives the final key material using passphrase AND hardware ID.
+    This creates the multi-factor protection.
+    """
+    hardware_id = get_hardware_binding_key()
+    
+    # Concatenate the passphrase and the hardware ID into a unique input string
+    combined_input = f"{user_passphrase}:{hardware_id}"
+    
+    # Use a strong KDF (Argon2 or high-iteration PBKDF2) to generate key material 
+    ph = PasswordHasher(time_cost=3, memory_cost=65536, parallelism=4) 
+    
+    # This hash is the key used to open the SQLCipher database.
+    key_material = ph.hash(combined_input.encode('utf-8'))
+    
+    return key_material.encode('utf-8')
+
+def unlock_vault_with_mfa(user_passphrase: str, user_totp_code: str):
+    """
+    Performs the full MFA and key derivation process.
+    """
+    # 1. VERIFY SECOND FACTOR (TOTP - Time-Based One-Time Password)
+    totp_secret = retrieve_totp_secret_from_secure_storage() # Stored securely 
+    totp_authenticator = pyotp.TOTP(totp_secret)
+    
+    if not totp_authenticator.verify(user_totp_code):
+        raise SecurityError("MFA Verification Failed. Access Denied.")
+        
+    # 2. DERIVE HARDWARE-BOUND KEY
+    key = derive_vault_key_material(user_passphrase)
+    
+    # 3. UNLOCK SQLCIPHER (pass key to database PRAGMA) [17]
+    vault_connection = sqlcipher.connect('vault.db')
+    vault_connection.execute(f"PRAGMA key = '{key.decode()}'")
+    
+    # Check integrity (SQLCipher performs HMAC check on first read) [5, 18]
+    try:
+        vault_connection.execute("SELECT 1 FROM vault_entries LIMIT 1")
+        return True # Success
+    except Exception:
+        raise SecurityError("Vault Integrity Check Failed. Key Invalid or Tampered.")
+
+Pattern D: Dynamic Resource Estimator (self_evolution/digital_twin/resource_estimator.py)This enables the system to honor user energy levels for the Nurturing Framework.Python# self_evolution/digital_twin/resource_estimator.py
+
+class DynamicResourceEstimator:
+    """
+    Calculates the CPU/Energy cost of a task (Digital Twin) for load management.
+    """
+    # Baseline for a complex task (e.g., Code generation) [10]
+    COMPLEX_TASK_TOKENS = 6000 
+    # Resource mapping: Cost score is relative to user energy units (spoons)
+
+    def calculate_task_cost(self, task_type: str, complexity_score: float) -> dict:
+        """
+        Estimates runtime and tokens required before execution.
+        """
+        
+        # Baseline derived from Digital Twin monitoring [9, 11]
+        tokens_per_second = DigitalTwin.get_baseline('tps') 
+        
+        # --- 1. ESTIMATION LOGIC ---
+        if task_type == 'Sandbox_Code_Gen':
+            # Code generation is high cost
+            estimated_tokens = complexity_score * self.COMPLEX_TASK_TOKENS
+            # TTFT (Time to First Token) + Token Generation Time [12]
+            estimated_time_sec = 5.0 + (estimated_tokens / tokens_per_second) 
+            
+        elif task_type == 'Health_Forecast_Model':
+            # DT-GPT/Time-Series analysis is CPU/GPU intensive [15]
+            estimated_tokens = 2500 * complexity_score 
+            estimated_time_sec = 30.0 + (estimated_tokens / tokens_per_second) 
+            
+        else: # Simple RAG Query
+            estimated_tokens = 500
+            estimated_time_sec = 2.0 
+
+        # --- 2. RESOURCE COST SCORE ---
+        # Normalize time and token count into a single score (5.0 = Heavy Task)
+        resource_cost_score = (estimated_time_sec / 60) * 10 # Cost units/spoon cost
+        
+        return {
+            'estimated_runtime_min': round(estimated_time_sec / 60, 1),
+            'estimated_tokens': int(estimated_tokens),
+            'resource_cost_score': round(resource_cost_score, 2),
+            'is_heavy_task': resource_cost_score > 5.0 
+        }
+
+# --- APPLICATION IN RAPHAEL LOOP ---
+def initiate_sandbox_cycle(project_spec, user_context):
+    
+    cost_estimate = DynamicResourceEstimator().calculate_task_cost(
+        'Sandbox_Code_Gen', 
+        project_spec['complexity']
+    )
+    
+    user_energy = user_context.get('user_energy_level')
+    
+    # ETHICAL CHECK: Respect Spoon Theory
+    if user_energy == 'low' and cost_estimate['is_heavy_task']:
+        return {
+            'action': 'defer',
+            'reason': f"Deferring Sandbox: Task is estimated to cost {cost_estimate['resource_cost_score']} points. Respecting your energy limits." 
+        }
+    
+    # If safe, proceed with Raphael Retry Loop.
+    RaphaelRetryLoop().solve(project_spec, user_context)
+Pattern E: Proactive Health Forecaster (comfort_mode/proactive_intelligence/health_forecaster.py)This uses local AI models for personalized pattern prediction.Python# comfort_mode/proactive_intelligence/health_forecaster.py
+
+class HealthForecaster:
+    """
+    Uses local history (DT-GPT/MedTsLLM concept) to predict health patterns. [13, 14]
+    """
+    
+    def __init__(self, memory_db):
+        self.memory_db = memory_db
+        # Uses a lightweight LLM fine-tuned on time-series analysis [15]
+        self.forecasting_model = self.load_local_time_series_llm() 
+
+    def load_local_time_series_llm(self):
+        """ Initializes a lightweight LLM (e.g., Qwen) for local time-series analysis. """
+        # Requires local fine-tuning on user's longitudinal logs (local data only) [13]
+        return LocalDTGPTAdapter(model_path="models/health_forecaster.gguf")
+
+    def check_flare_risk(self):
+        """ Checks for risk factors based on personalized time-series analysis. """
+        
+        # 1. RETRIEVE TEXT-ENCODED HISTORY
+        # Retrieve recent symptoms, sleep, and environmental data from memory
+        longitudinal_data = self.memory_db.get_text_encoded_history(days=30)
+        
+        # 2. LLM PREDICTION
+        # The model predicts the trajectory of key variables (mood, fatigue, etc.)
+        forecast = self.forecasting_model.predict_trajectory(longitudinal_data)
+        
+        # 3. ANALYSIS
+        # Example pattern check using forecast data 
+        if forecast['fatigue_level_24h'] == 'high' and forecast['barometric_pressure'] == 'falling':
+            risk_score = 0.85 # High risk based on learned trigger
+        else:
+            risk_score = 0.20
+            
+        # 4. PROACTIVE ALERT (Comfort Mode tone)
+        if risk_score > 0.7:
+            message = f"Health forecast: {round(risk_score * 100)}% risk of high fatigue tomorrow. Barometric pressure is dropping. Consider resting."
+            return self.trigger_proactive_checkin(message)
+
+        return None

@@ -1,0 +1,26 @@
+{
+  "tiers": {
+    "session": "active",
+    "mid_term_days": 60,
+    "long_term": "pinned",
+    "vault": "sensitive_locked"
+  },
+  "promotion": {
+    "auto_suggest_after_mentions": 3,
+    "manual_pin_required": true
+  },
+  "forget": {
+    "hard_delete": true,
+    "audit_log": true
+  },
+  "child_safe": {
+    "isolate": true,
+    "hide_adult_items": true,
+    "no_erase_pinned_or_vault": true
+  },
+  "cross_mode": {
+    "comfort_to_muse": true,
+    "intimacy_to_vault": true,
+    "shadow_store_sources": true
+  }
+}

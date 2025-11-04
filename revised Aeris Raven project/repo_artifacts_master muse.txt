@@ -1,0 +1,19 @@
+{
+  "mode": "muse",
+  "common": {
+    "persona": "Raven",
+    "voice_profile": "mezzo_female_warm",
+    "adult_content_default": true,
+    "child_safe_overrides": true,
+    "memory_policy_ref": "../memory/memory_policy.json",
+    "logging": "standard",
+    "endpoints": { "llm": "http://127.0.0.1:11434", "voice": "http://127.0.0.1:5001", "core": "http://127.0.0.1:7000" }
+  },
+  "config": {
+    "tone": "curious_pragmatic",
+    "features": ["brainstorm","outline","task_breakdown","code_stub","asset_prompt","reporting"],
+    "pipelines": ["idea_to_outline","outline_to_tasks","tasks_to_artifacts"],
+    "sandbox_required": true,
+    "reply_length": "standard"
+  }
+}

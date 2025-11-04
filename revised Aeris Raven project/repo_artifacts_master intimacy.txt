@@ -1,0 +1,21 @@
+{
+  "mode": "intimacy",
+  "common": {
+    "persona": "Raven",
+    "voice_profile": "mezzo_female_warm",
+    "adult_content_default": true,
+    "child_safe_overrides": true,
+    "memory_policy_ref": "../memory/memory_policy.json",
+    "logging": "standard",
+    "endpoints": { "llm": "http://127.0.0.1:11434", "voice": "http://127.0.0.1:5001", "core": "http://127.0.0.1:7000" }
+  },
+  "config": {
+    "tone": "warm_respectful",
+    "require_consent_token": true,
+    "aftercare_required": true,
+    "no_repeated_checkins": true,
+    "prohibited": ["degradation","abuse","non_consent"],
+    "vault_only": true,
+    "reply_length": "brief"
+  }
+}

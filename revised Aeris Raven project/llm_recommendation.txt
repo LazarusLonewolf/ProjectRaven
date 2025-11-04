@@ -1,0 +1,6 @@
+{
+  "primary": { "model": "Qwen-2.5-7B-Instruct", "runner": "llama.cpp (GGUF)", "quant": "Q4_K_M" },
+  "backup":  { "model": "Llama-3.1-8B-Instruct", "runner": "llama.cpp" },
+  "phase_1": "single model + tools",
+  "phase_2": "optional specialists if gaps appear"
+}

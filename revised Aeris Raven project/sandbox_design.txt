@@ -1,0 +1,5 @@
+{
+  "layers": ["self_build", "simulation"],
+  "self_build": { "container": "Docker/Firejail", "stages": ["draft","quarantine","staged","live"], "manifest": "module_manifest.template.json" },
+  "simulation": { "tools": ["PyBullet","Box2D","FreeCAD","Blender","NumPy","SciPy"], "offline_default": true }
+}

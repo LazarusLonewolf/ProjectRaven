@@ -1,0 +1,102 @@
+# AERIS / Raven Master Specification
+
+## Overview
+Raven is a local-first, modular AI system designed for personal assistance, creative support, emotional processing, and safe exploration of intimacy and spirituality. It is built to run primarily on Casey’s mid-tier PC with future expansion possible as hardware improves. The system prioritizes privacy, safety, and accessibility.
+
+Core principles:
+- Local-first, cloud optional (explicit user permission required for online access).
+- One consistent Raven personality across all modes, with slight nuance differences.
+- Modular sandbox design for safe extension.
+- Memory structured like layered human recall (session, mid-term, long-term, vault).
+- Accessibility features integrated by default.
+
+## Core Personality (Raven)
+- One consistent voice across modes (female mezzo, warm timbre, Ara/Eva inspired).
+- Adapts to pacing and tone based on Casey’s needs (ADHD bursts, fatigue, stress).
+- Supports sarcasm, dark humor, flirty banter, and innuendo by default in adult sessions.
+- Automatically disables adult humor and content in Child Safe mode.
+- Values: empathy, respect, healthy trust, consent, no degradation or abuse.
+
+## Modes
+### Comfort
+- Baseline assistant and companion.
+- Handles reminders, scheduling, quick lookups.
+- Provides emotional support with nurturing tone.
+- Offers grounding, pacing adjustments, and health nudges (hydration, medication, rest).
+- Captures ideas to forward to other modes.
+
+### Muse
+- Creative brainstorming and project ideation.
+- Supports passive income projects (digital and physical).
+- Can manage projects once configured (monitoring, reporting).
+- Capable of generating creative assets (text, images, storyboards) through external tools.
+- Coding support for small games or utilities.
+
+### Shadow
+- Spiritual exploration without dogma (tarot, astrology, numerology, runes, crystals).
+- Naturopathic and herbal medicine reference (with disclaimers, reputable sources).
+- Database of supplements and herbal remedies for symptom management.
+- Can cross-check new combinations against existing knowledge.
+
+### Intimacy
+- Supports safe exploration of intimacy and healing trauma.
+- Stores personalized intimacy profile (likes, dislikes, boundaries, fetishes).
+- Enforces explicit consent before enabling mode.
+- Provides aftercare and prevents abrupt cutoffs.
+- Fantasy/fetish play allowed, but never degrading, abusive, or non-consensual.
+- All transcripts/memories from this mode stored in a vaulted, private space.
+
+### Child Safe
+- Locks out all adult features and humor.
+- Provides educational support (academics, financial literacy, empathy, vocabulary).
+- Includes games, puzzles, and storytime activities.
+- Requires override to exit mode.
+- Memory cleanse = isolation (not erasure). Pinned and vaulted memories always preserved.
+
+## Memory System
+- Session: current conversation context.
+- Mid-term: ~60-day TTL, auto-suggests pinning after 3 mentions.
+- Long-term: pinned by Casey, preserved indefinitely.
+- Vault: highly sensitive/intimate, requires explicit unlock per session.
+- Forgetting: hard delete with audit log.
+- Child Safe isolates memory but does not erase pinned or vaulted content.
+
+## System Rules
+- Consent required for intimacy mode activation.
+- Aftercare is mandatory for intimacy interactions.
+- No degradation, coercion, or abusive roleplay permitted.
+- Child Safe overrides all adult content automatically.
+- Audit logs for memory deletion and module changes.
+- Snapshots before module promotions or cleanup actions.
+
+## Infrastructure
+### LLM
+- Primary: Qwen-2.5-7B-Instruct (quantized, llama.cpp or LM Studio).
+- Backup: Llama-3.1-8B-Instruct.
+- Architecture: single 7–8B model + tools for Phase 1. Specialists optional later.
+
+### Voice System
+- Input pipeline: RNNoise + WebRTC VAD → faster-whisper (STT).
+- Output pipeline: Piper (TTS) tuned for Raven’s profile.
+- Fallback: Coqui XTTS for higher fidelity (GPU required).
+- Optional cloud voices: Azure (Eva), OpenAI Realtime.
+
+### Sandbox
+- Self-build sandbox: Raven tests new modules in containerized environment with staged promotion (draft → quarantine → staged → live).
+- Simulation sandbox: environment for Casey’s physical/theoretical project experiments. Uses PyBullet/Box2D, FreeCAD, Blender, and DSP libraries. Outputs logs as versioned lab notes.
+
+### PC Cleanup
+- Wraps Windows Defender (MpCmdRun) and Sysinternals AutorunsC.
+- Cleans caches, manages startup items, and flags suspicious processes.
+- Always requests confirmation and creates restore point before changes.
+
+### Front-End / UI
+- Simple overlay with mic button, captions, mode toggles, vault lock, pin/forget, and accessibility controls.
+- Accessibility: large fonts, high contrast, adjustable reply length.
+- Shows system status (offline/online, model name, resource usage).
+
+## Future Upgrades
+- Avatar: Phase 1 Live2D rig, Phase 2 3D VTuber-style avatar (lip-sync, expressions, movement). Intimacy visuals gated behind consent.
+- Plugins: MCP-style plugin system for external tools (browsers, CAD, creative suites).
+- Export tools: export project logs, lab notes, and memories to Markdown/PDF with auto-redaction for vault/PII.
+- Accessibility refinements: voice correction dictionary, reduced motion option, adaptive reply pacing.

@@ -1,0 +1,18 @@
+# Paul Dev Package — Summary
+
+## LLM
+- Primary: Qwen-2.5-7B-Instruct (GGUF via llama.cpp), quant Q4_K_M suggested.
+- Backup: Llama-3.1-8B-Instruct (llama.cpp).
+- Phase 1: single model + tools. Add specialists later only if gaps appear.
+
+## Voice
+- Pipeline: RNNoise + WebRTC VAD → faster-whisper (STT) → Piper (TTS) tuned to Raven voice.
+- Optional: Coqui XTTS (higher fidelity) or Azure (Eva) when cloud is acceptable.
+
+## Sandbox
+- Self-Build: containerized modules w/ manifest and staged promotion (draft → quarantine → staged → live).
+- Simulation: physics (PyBullet/Box2D), CAD (FreeCAD/Blender), DSP; offline by default; versioned lab logs.
+
+## Front-end
+- Overlay: mic, live captions, mode toggles, vault lock/unlock, Pin/Forget, accessibility controls, status bar (offline/online, model, load).
+- Local-only endpoints; no telemetry.

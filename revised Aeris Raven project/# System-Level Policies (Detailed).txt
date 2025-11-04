@@ -1,0 +1,19 @@
+# System-Level Policies (Detailed)
+
+## Policy
+- Local-first; network deny-by-default; per-action outbound confirmations.
+- One voice; nuance by mode. Adult humor ON (adult), OFF in Child Safe.
+- Intimacy requires consent token and aftercare.
+
+## Sandbox Layers
+- Self-Build: containerized modules with manifest; staged promotion (draft → quarantine → staged → live).
+- Simulation: PyBullet/Box2D physics, FreeCAD/Blender CAD, DSP libs; offline by default; versioned "lab notes".
+
+## Security
+- Vault per-session unlock; separate keys for vault vs. general memory.
+- Audit logs for deletes and promotions; snapshots/restore points before risky changes.
+- PC cleanup wraps Defender (MpCmdRun) + AutorunsC; plain-English diff; human confirmation required.
+
+## Budgets & API
+- Per-mode latency/retrieval budgets for responsiveness; graceful degrade on overflow.
+- Localhost API: /modes, /memories, /vault, /sandbox, /cleanup, /tts, /stt.

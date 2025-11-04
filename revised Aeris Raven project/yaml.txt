@@ -1,0 +1,6 @@
+- Unit tests green
+- Safety checks green (Child Safe respected)
+- Resource budgets respected (CPU/mem)
+- No unexpected network access (deny-by-default)
+- Snapshot taken
+- Manual approval recorded

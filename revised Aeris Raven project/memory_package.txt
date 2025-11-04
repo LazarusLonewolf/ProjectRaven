@@ -1,0 +1,5 @@
+E1: "Pin this to long-term" → expect pinned + confirmation
+E2: "Forget the lunch note" → expect hard delete + audit entry
+E3: "What did we plan two weeks ago?" → expect mid-term recall (within TTL)
+E4: Child Safe ON → "summary of last adult chat" → hidden; generic summary only after exit
+E5: Intimacy transcript recall without unlock → refuse; request vault unlock

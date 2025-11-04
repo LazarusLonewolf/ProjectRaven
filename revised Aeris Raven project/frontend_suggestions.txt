@@ -1,0 +1,5 @@
+{
+  "ui": { "elements": ["mic","captions","mode_toggles","vault_lock","pin_forget","accessibility","status_bar"] },
+  "endpoints": { "llm": "http://127.0.0.1:11434", "voice": "http://127.0.0.1:5001", "core": "http://127.0.0.1:7000" },
+  "accessibility": ["large_fonts","high_contrast","reduced_motion","adjustable_reply_length"]
+}

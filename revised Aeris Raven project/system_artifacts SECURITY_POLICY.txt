@@ -1,0 +1,4 @@
+- Secrets in OS keyring or encrypted vault
+- Vault unlock required per session
+- No telemetry; local logs only
+- Deny-by-default outbound network; explicit allowlist for tools

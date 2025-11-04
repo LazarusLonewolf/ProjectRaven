@@ -1,0 +1,8 @@
+{
+  "name": "example_module",
+  "version": "0.1.0",
+  "permissions": { "fs": [], "net": [], "process": false, "gpu": false },
+  "limits": { "cpu_pct": 30, "mem_mb": 512, "timeout_s": 60 },
+  "entrypoint": "python -m module.entry",
+  "tests": { "unit": ["pytest -q"], "safety": ["python safety_check.py"] }
+}

@@ -1,0 +1,6 @@
+# Mode Artifacts (Detailed)
+- comfort.json
+- muse.json
+- shadow.json
+- intimacy.json
+- child_safe.json

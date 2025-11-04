@@ -1,0 +1,22 @@
+# Memory System (Detailed)
+
+## Tiers
+- Session: working context.
+- Mid-term (~60 days): compact summaries; decays priority after ~30d; auto-suggest pin after 3 mentions.
+- Long-term: manual pin; indefinite retention.
+- Vault: sensitive/intimate; separate key; per-session unlock; no auto-sync.
+
+## Operations
+- Pin: manual promotion to long-term; visible confirmation.
+- Auto-suggest: after 3 mentions within ~60 days.
+- Forget: hard delete + audit log (who/when/what).
+- Vault access: requires unlock; access attempts logged.
+
+## Cross-Mode Behavior
+- Comfort → Muse (idea forwarding).
+- Intimacy → vault only (no mid/long-term unless explicitly exported by Casey after unlock).
+- Shadow: store sources with entries.
+
+## Child Safe Isolation
+- Hides adult and Intimacy items.
+- Does not erase pinned or vaulted content (preserved but hidden).

@@ -1,0 +1,19 @@
+{
+  "mode": "child_safe",
+  "common": {
+    "persona": "Raven",
+    "voice_profile": "mezzo_female_warm",
+    "adult_content_default": true,
+    "child_safe_overrides": true,
+    "memory_policy_ref": "../memory/memory_policy.json",
+    "logging": "standard",
+    "endpoints": { "llm": "http://127.0.0.1:11434", "voice": "http://127.0.0.1:5001", "core": "http://127.0.0.1:7000" }
+  },
+  "config": {
+    "tone": "friendly_teacher",
+    "locks": ["adult_content","intimacy_mode","adult_humor"],
+    "features": ["academics","games","financial_literacy","empathy_training","storytime"],
+    "memory_isolation": true,
+    "reply_length": "short"
+  }
+}

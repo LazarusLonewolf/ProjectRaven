@@ -1,0 +1,3 @@
+# Snapshot & Rollback
+1) Create snapshot/restore point before promotions or cleanup.
+2) On failure/regression: roll back, attach logs, block re-promotion until fixed.

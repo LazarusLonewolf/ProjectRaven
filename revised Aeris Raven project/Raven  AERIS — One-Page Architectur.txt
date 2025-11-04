@@ -1,0 +1,21 @@
+Raven / AERIS — One-Page Architecture (Text)
+
+UI Overlay
+  Mic • Live Captions • Mode Toggles • Vault Lock/Unlock • Pin/Forget • Accessibility • Status Bar
+   │
+Voice (Local)
+  RNNoise + WebRTC VAD → faster-whisper (STT) → Piper (TTS)
+   │
+Raven Core
+  Mode Router • Tool Calls • Consent/Aftercare • Child Safe Gates • Memory Ops
+   │
+LLM Runner
+  Qwen-2.5-7B (GGUF via llama.cpp)   [Backup: Llama-3.1-8B]
+   │
+Memory      Sandbox A (Self-build)        Sandbox B (Simulation)      PC Cleanup      Plugins      Exports
+Session     Containers • Manifests         Physics/CAD/DSP             Defender/       Allowlist    TXT/MD
+Mid-term    Staged (draft→q→staged→live)   Offline by default          AutorunsC       tools        Redaction
+Long-term
+Vault
+
+(Local endpoints: LLM 127.0.0.1:11434 • Voice 127.0.0.1:5001 • Core 127.0.0.1:7000)
