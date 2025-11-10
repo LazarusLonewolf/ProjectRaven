@@ -1,0 +1,21 @@
+# Raven Access Control Map
+# Purpose: Define role-based and mode-based access rights and trust levels.
+
+[roles]
+casey = full_access
+paul = engineering_access
+connor = restricted_access
+default = limited_view
+
+[modes]
+comfort = elevated_trust
+intimacy = emotional_priority
+shadow = diagnostic_insight
+muse = creative_collab
+child_safe = safeguard_mode
+
+[trust_tiers]
+tier1 = casey
+tier2 = paul
+tier3 = connor
+tier4 = guest

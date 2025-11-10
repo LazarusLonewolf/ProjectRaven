@@ -1,0 +1,13 @@
+{
+  "mode_switch": ["^/mode\\s+(raven|comfort|muse|shadow|connor|core)\\b"],
+  "diag": ["^diag$","^diagnostic$"],
+  "help": ["^help$","^menu$","^options$"],
+  "journal_start": ["^journal$","^save this$"],
+  "journal_confirm": ["^yes$","^y$"],
+  "journal_cancel": ["^no$","^n$"],
+  "ritual_tarot": ["^tarot(\\b|\\s)"],
+  "ritual_numerology": ["^numerology(\\b|\\s)"],
+  "creative": ["brainstorm","story","idea","create"],
+  "smalltalk": ["how are you","what do you think","your thoughts","what's on your mind"],
+  "identity": ["who are you","what are you","tell me about you","about yourself"]
+}
