@@ -1,0 +1,186 @@
+[
+  {
+    "timestamp": "2025-08-13T08:46:10.003508",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-08-14T02:31:12.825061",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "error",
+    "details": {
+      "error": "ocr failed: tesseract is not installed or it's not in your PATH. See README file for more information."
+    }
+  },
+  {
+    "timestamp": "2025-08-14T02:31:33.711896",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-08-22T05:27:09.888237",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "error",
+    "details": {
+      "error": "tesseract.exe not found. Set TESSERACT_EXE or install Tesseract."
+    }
+  },
+  {
+    "timestamp": "2025-08-22T05:27:19.189115",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-08-22T06:08:15.130828",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-08-22T06:08:43.378213",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "error",
+    "details": {
+      "error": "no OCR implementation available"
+    }
+  },
+  {
+    "timestamp": "2025-08-22T06:47:33.544228",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test_Capture.extracted.txt",
+      "chars": 1932
+    }
+  },
+  {
+    "timestamp": "2025-08-22T06:47:44.439234",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-08-22T07:05:57.699888",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test_Capture.extracted.txt",
+      "chars": 1932
+    }
+  },
+  {
+    "timestamp": "2025-08-22T07:14:52.981735",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-08-26T21:53:52.783164",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test_Capture.extracted.txt",
+      "chars": 1932
+    }
+  },
+  {
+    "timestamp": "2025-08-26T21:54:00.997362",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-08-30T09:04:24.032023",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test_Capture.extracted.txt",
+      "chars": 1932
+    }
+  },
+  {
+    "timestamp": "2025-08-30T09:04:37.324265",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-09-01T22:45:32.856900",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "ext": ".txt",
+    "method": "Parser",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test.extracted.txt",
+      "chars": 30
+    }
+  },
+  {
+    "timestamp": "2025-09-01T22:46:48.105415",
+    "file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "ext": ".png",
+    "method": "OCR",
+    "status": "success",
+    "details": {
+      "saved_to": "C:\\Users\\Paul\\Desktop\\Raven\\out\\sandbox\\Test_Capture.extracted.txt",
+      "chars": 1932
+    }
+  }
+]

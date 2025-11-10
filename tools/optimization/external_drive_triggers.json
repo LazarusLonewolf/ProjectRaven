@@ -1,0 +1,14 @@
+{
+  "external_drive_triggers": [
+    "check for extra storage",
+    "look for plugged in drives",
+    "scan for any usb drive",
+    "see if there's a backup drive",
+    "raven, check for drives",
+    "do i have any external drives",
+    "run a drive check",
+    "see what i have plugged in",
+    "look for outside storage",
+    "scan for another hard drive"
+  ]
+}
