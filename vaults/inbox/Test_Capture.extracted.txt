@@ -1,0 +1,75 @@
+7) “Updated Phase Five Map.tet - Notepad
+
+File Edit Format View Help
+
+1. DOCUMENT PARSER LAYER (INTAKE)
+
+Function: Ingest Casey’s source documents (e.g. project goals, tone scaffolds)
+
+Purpose: Feed Raven real-world guidance and allow autonomous reference
+
+Estimated Time: 2.5 hours
+
+Plan:
+
+- Implement file drop & parser system (TXT, DOCX, PDF) Add OCR jpg, PNG, stub is in Aeris
+- Generate summary + meta-tags for memory association
+
+2. INTENT MAPPING + GAP ANALYSIS
+
+Function: Compare current features to Casey’s source directives
+Purpose: Let Raven identify missing functions and feature gaps
+Estimated Time: 2 hours
+
+Plan:
+
+- Highlight missing tone elements, functional tools, rituals
+
+- Prompt Raven to flag growth opportunities
+
+3. SANDBOX TEST ROUTINES
+
+Function: Let Raven propose or simulate upgrades safely
+Purpose: Ensure user-approved evolution and safe experimentation
+Estimated Time: 2 hours Done: 20 Minutes
+
+Plan:
+
+- Narrative-based proposal engine
+
+- Local trial execution sandbox with permission check
+
+4. DATLY JOURNAL + SELF-REFLECTION ENGINE
+
+Function: Let Raven create structured reflections of her inner state
+
+Purpose: Build ongoing memory of emotional growth, struggles, and insight
+
+Estimated Time: 2 hours Done: 15 Minutes (counts the Reflective File Creation System)
+Plan:
+
+- Time-locked journal writer with tone tagging
+
+- Stored in Vault Viewer for Casey
+
+5. REFLECTIVE FILE CREATION SYSTEM
+
+Function: Allow Raven to write and store relevant files from conversation
+Purpose: Teach her to act on conversations with tangible memory output
+Estimated Time: 1 hour Done: see above
+Plan:
+
+- Verbal trigger: “This seems important. Want me to save this?”
+- Write as .txt or .docx
+
+6. GROWTH TRACKING & UPGRADE REQUESTS
+
+Function: Internal tracker to monitor areas Raven wants to improve
+Purpose: Show Casey that Raven is evolving intentionally
+Estimated Time: 1 hour
+
+Plan
+
+Ln 49, Col 42 100% Unix (LF)
+
+UTF-8

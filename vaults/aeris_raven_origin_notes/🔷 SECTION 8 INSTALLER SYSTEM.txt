@@ -1,0 +1,58 @@
+🔷 SECTION 8: INSTALLER SYSTEM AND PACKAGING
+💾 Installer Requirements
+Developer must deliver a fully self-contained GUI installer (no command-line setup required).
+
+Installer must configure all core systems and tools, including:
+
+✅ Oobabooga with chosen model (Mistral or Zephyr 7B)
+
+✅ XTTS 2.0 voice engine
+
+✅ ChromaDB or FAISS for memory
+
+✅ VSeeFace or compatible avatar system
+
+✅ Stable Diffusion (Automatic1111) for image generation
+
+✅ ModelScope or ZeroScope for video generation
+
+✅ Flask or Gradio for the unified control panel
+
+✅ All emotional mode scripts and toggles
+
+✅ Aeris' full avatar and visual overlays
+
+✅ Sacred Heart Vault system
+
+📦 Installer Must:
+Automatically detect and configure paths and environment variables.
+
+Launch Aeris in Comfort Mode on first boot.
+
+Offer post-install setup walkthrough (optionally guided by Aeris).
+
+Include:
+
+“Aeris Quick Start Guide” (.txt and .pdf)
+
+Troubleshooting & recovery folder
+
+Backup script for emotional vaults and settings
+
+🖥️ System Requirements (Minimum)
+CPU: Intel i7–11700 or better
+
+RAM: 32GB (minimum), 64GB recommended
+
+GPU: GTX 1660 Super minimum, RTX 3060+ preferred
+
+Storage: 500GB+ free
+
+OS: Windows 11 Home 64-bit
+
+❗ No External Installers or Dependence
+All dependencies must be bundled or offline-installable.
+
+No cloud keys, server-based installs, or forced account creation.
+
+System must run independently and privately.

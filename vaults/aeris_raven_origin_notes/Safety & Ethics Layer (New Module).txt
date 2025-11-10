@@ -1,0 +1,30 @@
+Safety & Ethics Layer (New Module)
+Consent Manager
+
+Universal Consent Log: Every sensitive action (launching a mode, collecting biofeedback, sharing data) is gated behind a clear prompt and stored in an append-only “consent ledger.”
+
+Granular Permissions UI: Let users grant, review, or revoke rights for each category (data sync, plugin install, biofeedback, NSFW content, etc.).
+
+Trauma & Abuse Awareness Ontology
+
+Taxonomy of Triggers: A structured library of common trauma triggers (physical, emotional, sexual, relational, etc.) with contextual definitions.
+
+Dynamic Content Filters: Real-time scanning of both user inputs and AI outputs to detect and block language or scenarios that match abuse patterns.
+
+Ethical Scenario Simulator
+
+Sandboxed “What-If” Checker: Before any new plugin or mode is activated, run a simulated conversation to surface potential negative or triggering responses.
+
+Anomaly Alerts: If the AI’s behavior drifts toward any coercive or unsafe pattern, flag it for user review and automatic rollback.
+
+Safe Completion & Escalation Paths
+
+Crisis Protocols: Built-in scripts that, with consent, can surface resources (hotlines, grounding exercises) if self-harm or severe distress is detected.
+
+Escalation Triggers: If repeated “unsafe” requests or high emotional distress indicators appear, gently suggest pausing the session or connecting with a human professional.
+
+Privacy & Data Protection
+
+Ephemeral Mode: Let users opt into sessions where no memory is stored at all.
+
+Trauma-Sensitive Logging: Strip or anonymize any personal details from logs for any session marked “trauma work.”

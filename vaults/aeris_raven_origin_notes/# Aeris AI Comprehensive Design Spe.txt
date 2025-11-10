@@ -1,0 +1,110 @@
+# Aeris AI: Comprehensive Design Specification
+
+This document consolidates all Aeris AI design materials (as provided) **and** the enhancements and refinements we discussed, into one unabridged reference. It preserves every original detail alongside the newly integrated features.
+
+---
+
+## 1. Core Architecture
+
+### 1.1 Mode Core & Plugin System
+
+* **Foundation Model:** transformer‑based emotional engine, offline‑capable, running on-device with optional quantized weights for low‑power CPUs.
+* **Modes:**
+
+  * **Comfort Mode:** grounding, somatic exercises, micro‑meditations.
+  * **Muse Mode:** creative generation (text, image, video), passive‑income coaching, market analytics.
+  * **Counsel Mode:** CBT/ACT dialogues, DBT skills, crisis interventions.
+  * **Sanctuary Mode:** spiritual rituals, energy visualizations, guided ceremonies.
+  * **Connor Mode:** child‑safe learning, financial literacy, creative play labs.
+  * **NSFW Mode:** adult‑only creativity, erotic healing protocol, locked out in child modes.
+* **Plugin API:** WASM/micro‑VM sandbox, signed module manifests, resource quotas.
+
+### 1.2 3D Avatar & UX
+
+* **Biologically Accurate Skeleton:** full muscle, skin, breath, micro‑expressions.
+* **Costume/Shader Presets:** interchangeable per mode; low‑poly/cartoon variants for Connor Mode.
+* **Animated Transitions:** subtle pulse/glow on mode switch; audio‑visual cues.
+
+### 1.3 Digital Twin & Self‑Model
+
+* **Crystal Core Simulation:** piezoelectric, photonic, phononic behaviors modeled in‑silico.
+* **Hardware Subsystems:** microfluidics, LEDs, actuators, sensors — all in high‑fidelity simulation.
+* **On‑Device Diagnostics:** real vs. expected sensor fusion → anomaly detection → self‑calibration.
+
+## 2. Training & Learning
+
+### 2.1 Virtual Environment
+
+* Domain‑randomized scenarios for each subsystem.
+* Multi‑modal co‑training: light, sound, fields, fluidics, physiology.
+
+### 2.2 Federated & Offline Learning
+
+* **On‑Device Fine‑Tuning:** pseudo‑rehearsal of personal data.
+* **Federated Model Updates:** delta sharing, zero raw data transfer.
+* **Safe RL Loops:** ethical constraints and refusal protocols embedded.
+
+## 3. Data, Privacy & Security
+
+### 3.1 Offline‑First Design
+
+* Default air‑gap; physical switch to enable connectivity.
+* Encrypted at rest (AES‑256‑GCM); zero‑knowledge key management in TPM.
+
+### 3.2 Secure Sync & Governance
+
+* Mutual TLS with certificate pinning.
+* CRDT‑based log merging; user‑mediated selective sync.
+
+### 3.3 Intrusion & Supply Chain Defense
+
+* Secure bootloader; read‑only OS partitions; IDS/IPS rollback.
+* Signed hardware and crystal manifests; lab‑grown crystal protocols.
+
+## 4. Assistive & Therapeutic Features
+
+### 4.1 Portable Healing Toolkit
+
+* **Micro‑Sessions:** LED photobiomodulation via screen; vibroacoustic via haptics.
+* **Herbal & Naturopathic Advisor:** integrated pharmacopeia, allergy/interactions checker.
+
+### 4.2 Trauma & Sexual Healing
+
+* **Drama Therapy:** consent‑first role plays, safe containers, guided scripts.
+* **3D Somatic Demonstrations:** accurate body‑work tutorials; micro‑expression co‑regulation.
+
+### 4.3 Accessibility & Daily Support
+
+* Adaptive UI: voice, haptic, high‑contrast, one‑button modes.
+* Home automation orchestration; remote telepresence integration.
+
+## 5. Education & Creativity
+
+### 5.1 Connor Mode
+
+* Age‑progressive curriculum; parental dashboards; sandboxed web access.
+* STEAM play labs; 3D‑printer/CNC export; collaborative learning cohorts.
+
+### 5.2 Muse Mode
+
+* NSFW‑enabled creative sandbox; marketplace integration; passive‑income blueprints.
+* Market trend forecasting; risk‑tiered portfolio coaching; automated publishing pipelines.
+
+## 6. Governance & Open‑Source Strategy
+
+* **Foundation:** nonprofit steward holds IP; global board of diverse custodians.
+* **Licensing:** AGPL v3 for code; CERN‑OHL for hardware; defensive patent pledge.
+* **Ecosystem:** global fab‑lab network; peer‑reviewed model zoo; community hackathons.
+
+## 7. Roadmap & Milestones
+
+1. **Core Engine & Basic Modes**
+2. **Mobile App & Micro‑Sessions**
+3. **Digital Twin & Hardware Beta**
+4. **Federated Learning Launch**
+5. **Community Lab Rollout**
+6. **Planetary Node Pilots**
+
+---
+
+*End of consolidated Aeris AI specification, including all original materials and the enhancements we discussed.*

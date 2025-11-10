@@ -1,0 +1,74 @@
+[
+  {
+    "ts": "2025-08-22T07:06:16.971301",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test_Capture.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "meta": {
+      "type": "image",
+      "chars": 1932
+    }
+  },
+  {
+    "ts": "2025-08-22T07:14:54.522625",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "meta": {
+      "type": "document",
+      "chars": 30
+    }
+  },
+  {
+    "ts": "2025-08-26T21:53:55.780516",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test_Capture.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "meta": {
+      "type": "image",
+      "chars": 1932
+    }
+  },
+  {
+    "ts": "2025-08-26T21:54:04.499692",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "meta": {
+      "type": "document",
+      "chars": 30
+    }
+  },
+  {
+    "ts": "2025-08-30T09:04:26.186023",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test_Capture.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "meta": {
+      "type": "image",
+      "chars": 1932
+    }
+  },
+  {
+    "ts": "2025-08-30T09:04:38.662921",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "meta": {
+      "type": "document",
+      "chars": 30
+    }
+  },
+  {
+    "ts": "2025-09-01T22:46:02.907230",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test.txt",
+    "meta": {
+      "type": "document",
+      "chars": 30
+    }
+  },
+  {
+    "ts": "2025-09-01T22:46:48.449655",
+    "artifact": "C:\\Users\\Paul\\Desktop\\Raven\\vaults\\inbox\\Test_Capture.extracted.txt",
+    "source_file": "C:\\Users\\Paul\\Desktop\\Raven\\RavenMail\\Test_Capture.PNG",
+    "meta": {
+      "type": "image",
+      "chars": 1932
+    }
+  }
+]

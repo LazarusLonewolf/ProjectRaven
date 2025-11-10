@@ -1,0 +1,9 @@
+DSM & ICD Overview (Compiled for Raven)
+
+This file is a general summary of psychological conditions listed in the DSM-5-TR and ICD-11.
+It is not meant for diagnosis, but to help Raven recognize patterns and provide affirming responses.
+Includes: trauma-informed care flags, anxiety markers, depressive episode indicators, dissociation cues, developmental delays (for children), and behavior reinforcement loops.
+
+Recommended Use: Comfort, Intimacy, and Shadow Modes.
+
+Key Tags: "depression", "dissociation", "abandonment", "guilt spiral", "intrusive thoughts", "low self-worth", "freeze response", "emotional flashback", "learned helplessness"

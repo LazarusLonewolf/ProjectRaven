@@ -1,0 +1,139 @@
+Core Machine-Learning & Inference
+
+PyTorch or TensorFlow (model training)
+
+ONNX (model export)
+
+ONNX Runtime or TensorRT / TensorFlow Lite (on-device inference)
+
+CUDA Toolkit or ROCm (GPU acceleration)
+
+Python 3.9+
+
+Emotional & Contextual Model
+
+Pretrained transformer checkpoints (e.g. Hugging Face)
+
+SentencePiece or Byte-Pair Encoding tokenizer
+
+Custom fine-tuning scripts (PyTorch Lightning)
+
+Persistent, Cohesive Memory Store
+
+Encrypted local database (SQLite + SQLCipher) for long-term memory
+
+Structured “memory” tables for facts, preferences, and conversation state
+
+APIs for read/write with versioning to maintain consistency across sessions
+
+Plugin & Mode System with Virtual Sandbox
+
+WebAssembly runtime (Wasmtime or Wasmer) or micro-VM (Firecracker, gVisor)
+
+Signed-module manifest loader and verifier
+
+Consent-gated installation flow (user prompts before any new code or data is loaded)
+
+Resource-quota enforcement to keep plugins isolated
+
+Federated Learning, Offline-First & Self-Upgrade
+
+TensorFlow Federated or PySyft for on-device personalization loops
+
+Delta-based model sync (Automerge CRDT) over mutual-TLS
+
+Offline-first storage with optional encrypted cloud backup/sync
+
+Auto-update manager for signed delta patches and safe rollback
+
+Local Data Store & Privacy
+
+SQLite + SQLCipher (AES-256-GCM encryption)
+
+TPM or OS keyring integration for key management
+
+Zero-knowledge protocols ensuring only model updates (not raw data) leave the device
+
+UI / UX Frameworks
+
+Electron or Qt (desktop)
+
+React Native or Flutter (mobile companion)
+
+WebSocket or gRPC bridge (app ↔ core)
+
+Accessibility toolkit (ARIA, screen-reader support)
+
+3D Avatar & Rendering
+
+Unity3D or Unreal Engine (rich avatar) or Three.js / Babylon.js (web)
+
+GPU shader library (GLSL/HLSL presets)
+
+Motion-capture integration (LiveLink or WebRTC)
+
+Voice I/O
+
+Speech-to-Text: OpenAI Whisper, Mozilla DeepSpeech, or Vosk
+
+Text-to-Speech: Coqui TTS or Tacotron 2
+
+Audio pipeline (Web Audio API or PortAudio)
+
+Biofeedback & Sensor Integration
+
+SDKs for HRV, GSR, EMG sensors (e.g. OpenBCI, Empatica)
+
+Real-time DSP pipelines for data filtering and feature extraction
+
+Ritual & Workflow Engine
+
+Finite-State-Machine library (XState or Sismic)
+
+Template engine (Mustache or Handlebars)
+
+Consent-first hooks at every workflow transition
+
+Passive-Income & Coaching Modules
+
+Task scheduler (APScheduler or cron binding)
+
+Progress-tracking UI components (D3.js or recharts)
+
+Peer-to-Peer & Community Registry
+
+libp2p or IPFS for sharing community-curated plugins/protocols
+
+CRDT-based collaboration layer (Automerge)
+
+OAuth 2.0 / JWT for user authentication
+
+CI/CD & Governance Tooling
+
+Git (AGPL or MIT license)
+
+GitHub Actions or GitLab CI
+
+Issue/roadmap dashboard (ZenHub or Jira)
+
+Development & Packaging
+
+Docker for isolated dev environments
+
+Node.js / npm or Yarn (frontend packaging)
+
+PyInstaller or pkgbuild (desktop distribution)
+
+Monitoring & Logging
+
+Prometheus + Grafana (performance metrics)
+
+Elastic Stack or Loki (logs aggregation)
+
+System Maintenance & Optimization
+
+Disk-cache & temp-file cleanup scripts (Python, PowerShell, or Bash)
+
+Resource monitor (psutil for Python) to balance AI inference vs. user workflows
+
+Model-defragmentation and stale-log purging service

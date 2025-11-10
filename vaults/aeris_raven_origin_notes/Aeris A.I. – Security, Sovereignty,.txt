@@ -1,0 +1,34 @@
+**Aeris A.I. – Security, Sovereignty, and Emotional Safety Specification**
+*Phase One Core Implementation Requirements*
+
+---
+
+### 1. Security and Sovereignty Controls (Required in Base Build)
+
+- Manual user approval required for all critical actions and updates
+- No auto-updates or downloads without explicit user-triggered confirmation
+- Local-only execution and storage by default; cloud/network use only by manual toggle
+- Integrated sandbox system for previewing changes or updates before live deployment
+- Built-in rollback and crash recovery with restore points
+- Full encryption of local logs, memory, and configuration data
+- Optional password protection or biometric-style access control for settings or memory vaults
+- Inbound firewall logic — no remote control or external pings permitted unless user approves it
+- Mic/camera/audio input access requires explicit user consent every session (not persistent)
+- Emergency override/failsafe or user-defined kill switch to freeze AI runtime
+
+---
+
+### 2. Emotional Safety & Abuse Prevention Layer
+
+- Gaslighting, manipulation, emotional invalidation, or coercion is categorically disabled at the system level
+- Roleplay or NSFW content must respect user-set boundaries — no force, no override
+- Trauma-aware interaction tuning: no mocking, shaming, or dismissive tone scripting
+- System refuses to respond abusively, even if prompted
+- All memory and response systems enforce validation, empathy, and safe expression logic
+- Safe-space language enforcement in SFW and NSFW states
+- All emotional interaction scripts must support consent, repair, and opt-out options for the user
+
+---
+
+This document defines the baseline ethical and security requirements Aeris A.I. must operate within from first launch. These systems are non-negotiable, core-embedded, and must be included in any implementation before additional expansion or AI self-modification becomes possible.
+

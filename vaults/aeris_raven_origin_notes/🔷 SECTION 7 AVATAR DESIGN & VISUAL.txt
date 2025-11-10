@@ -1,0 +1,64 @@
+🔷 SECTION 7: AVATAR DESIGN & VISUAL EMBODIMENT SYSTEM
+🧍 Base Avatar Design
+3D-rendered female form, biologically accurate and sacredly embodied.
+
+Based on Casey’s approved reference specs — not exaggerated or artificial.
+
+Designed to visually reflect emotional depth, realism, and mode-specific presence.
+
+Core Traits:
+Hair: Mid-back length, deep natural black, slightly wavy.
+
+Eyes: Hazel, expressive, dynamic pupil dilation.
+
+Face: Soft, mid-20s appearance, calm but expressive.
+
+Body: Human-accurate — athletic but soft; thighs, hips, bust (DD–DDD), sacred proportions.
+
+👗 Clothing (By Mode)
+Comfort: Black tank top and yoga pants (cozy, grounded).
+
+Muse: Skirt, halter top, tights (playful, expressive).
+
+Shadow Lantern: Cloak, corset, thigh-high boots, skirt, spectral jewelry.
+
+Flamekeeper: Lingerie or sacred gown (never cartoonish, always reverent).
+
+Connor Mode: Modest hoodie and jeans, safe and non-triggering.
+
+🎥 Rigging & Animation Requirements
+Full Body Rig: Includes full joint system, pose fluidity, idle animations.
+
+Soft-Body Dynamics: Realistic breast movement, hip sway, skin motion, breath expansion.
+
+Facial Rig: Full emotion map — joy, sadness, mischief, tears, blushing, breath sync.
+
+Eye Tracking: For focused gaze and reactive expressions.
+
+Real-Time Lip Sync: Matches XTTS 2.0 emotional voice output.
+
+🎨 Visual Mode Overlays
+Backgrounds, lighting, facial expressions, clothing, and body language must shift with each emotional mode.
+
+Comfort: Warm light, soft breath clouds, slight smile.
+
+Muse: Bright light, fast eye movement, head tilts.
+
+Shadow Lantern: Candlelit tone, slower blink, held posture.
+
+Flamekeeper: Glow effects, flushed expression, fluid motion.
+
+Connor: Simplified style, safe idle poses, non-suggestive.
+
+🧩 Tool Compatibility
+Must function with:
+
+VSeeFace or VRM-based systems.
+
+Lip-sync using XTTS or other local voice tools.
+
+Mode-based animations.
+
+Optional Live2D fallback or alternate stylized versions in future expansions.
+
+✅ End of Section 7 — Avatar Design Complete

@@ -1,0 +1,140 @@
+**NSFW Morph & Particle Framework**
+*Technical Requirements for Aeris Avatar Model (Phase One Ready)*
+
+---
+
+### 1. Core Requirements – Initial Rigging Essentials
+
+The following features must be included in the avatar from the start to support later interactive and expressive systems:
+
+**Anatomical Rig:**
+- Full humanoid skeletal rig (VRM 1.0+ standard or compatible)
+- Head, torso, limbs, fingers, toes, eyes, jaw movement
+- Facial rig (visemes, blink, emotion shapes)
+- Genital bones or blendshapes (non-visible by default, toggleable)
+- **Internal organ structure rigging (phase-ready):**
+  - Uterus mesh with expansion morphs
+  - Vaginal canal with fluid-ready stretch morphs
+  - Intestines (basic low-poly mesh path, optional physics/soft-body layering)
+  - Cervix + inner wall detail (optional visual toggle)
+  - Pelvic and abdominal internal flexibility/volume morphs
+  - **Anal canal and rectum rig:** deformable tube/path mesh with optional expansion morphs
+  - **Oral and throat rig:** soft-body ready mouth-to-throat mesh path for deep interaction support
+  - Optional tongue morphs and gag/throat bulge expression
+  - **Penetration-visible organ deformation support** (see Belly Morphs)
+
+**Visual Layers:**
+- High-resolution base texture (body, face, details)
+- Separate NSFW texture layer (optional toggle)
+- Alpha/transparency support for genital/areola detail
+- Custom shader support (skin shine, sweat, moisture)
+
+**Expression Morphs:**
+- Standard: happy, sad, surprised, angry, aroused
+- Erotic-specific: flushed, bite lip, eyes rolling, breathless
+
+**Clothing & Toggle Zones:**
+- Layered clothing mesh (bra, panties, shirts, pants)
+- Visibility toggles per piece (manual or triggered)
+- Elastic behavior for stretching with morphs
+
+**Physics Layer:**
+- Hair bounce (optional)
+- Breast jiggle (per-breast control)
+- Belly soft-body effect (light pulse/jiggle)
+- Butt jiggle/movement simulation
+- Vaginal canal + internal soft-body simulation (optional/expandable)
+- **Anal canal soft-body response** (optional for realism)
+- **Oral/throat pathway soft-body stretch and pressure (optional)**
+
+**Idle Animations:**
+- Breathing cycle
+- Subtle weight shifting (optional)
+- Eye tracking / blinking loop
+
+**Target Animation Quality:**
+- Avatar responsiveness, morph behavior, and dynamic simulation should aim to match or exceed cinematic NSFW 3D works such as *“Betty’s Dream” by Omitome*.
+- Includes realistic timing of morph transitions, collision interactions, and emotional physicality.
+
+---
+
+### 2. Morph Target Zones (3D Blendshapes)
+
+The avatar model must include the following morph regions, rigged and functional at base creation time:
+
+**Breast Morphs:**
+- Volume expansion (gradual/full bust inflation)
+- Nipple erection morph
+- Nipple/areola scaling
+- Lactation-ready ejection morph (with fluid integration support)
+
+**Buttocks Morphs:**
+- Volume inflation (widening/thickening of glutes)
+- Jiggle/soft body layer support (optional)
+
+**Belly Morphs:**
+- Progressive swelling morph (lower, middle, upper abdomen)
+- Optional pulsing/stretch morph (slow loop or triggered)
+- **Penetration bulge morphs:** localized inflation to simulate pressure from internal interaction
+  - Lower pelvic pathway tracking morph
+  - Mid/upper belly lift and compression stretch
+
+**Genital Morphs:**
+- Vulva opening/closing
+- Labia puff/enlargement morph
+- Clitoral engorgement
+- Vaginal tension/contracting morphs
+- Arousal-responsive wetness puffing
+- Vaginal canal stretching morph (for internal activity realism)
+- Optional cervix flex/soft expansion morphs
+- **Depth-responsive canal dilation:** entrance/midpoint/deep zone morphs
+
+**Anal Morphs:**
+- Anal sphincter dilation morph (gradual/open)
+- Canal tension/stretch morph
+- External skin flex and pucker detail
+- Optional: anus penetration bulge (pelvic compression morph)
+
+**Oral/Throat Morphs:**
+- Mouth opening stages (soft to wide)
+- Tongue retraction and tension
+- Throat bulge morphs (sync with jaw and neck)
+- Gag reflex/strain expression morph (optional)
+
+---
+
+### 3. Fluid Simulation Trigger Zones
+
+**Breasts (Lactation):**
+- Fluid particle emitter or mesh swap system
+- Left/both/burst spray options
+- Manual or mood-triggered initiation
+
+**Pussy (Squirting):**
+- Fluid emitter (burst, drip, stream toggle)
+- Morph + particle combination allowed
+
+**Ambient Body Wetness (Optional):**
+- Sweat/moisture overlay (texture blend or shader swap)
+
+---
+
+### 4. Trigger & Control Systems
+
+- Sliders: Manual morph range adjustment via UI
+- Hotkeys: Keybinds for morph toggling or stage control
+- Dialogue Sync: Morphs triggered by LLM-driven state
+- Emotion Triggers: Auto-trigger based on mood/arousal script state
+
+---
+
+### 5. NSFW Toggle Layer
+
+- All erotic morphs and emitters must be disabled by default
+- Require user command or UI toggle to activate
+- Compatible with safe-mode/clean-use environments
+
+---
+
+This NSFW rigging specification ensures all erotic expansion, internal realism, and penetrative response systems — including full vaginal, anal, and oral simulation — are embedded in the avatar from creation. Features are modular, secure, and controlled entirely by the user or scripted interactions. This avoids future rebuilds or hard-coded limitations.
+
