@@ -1,0 +1,6 @@
+{
+  "enable_journaling": true,
+  "allow_voice_mode": false,
+  "debug_mode": true,
+  "auto_backup": true
+}

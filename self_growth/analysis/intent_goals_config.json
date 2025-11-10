@@ -1,0 +1,55 @@
+{
+    "known_goals": [
+        "build routine",
+        "reduce stress",
+        "improve sleep",
+        "increase creativity",
+        "practice mindfulness",
+        "reconnect with others",
+        "maintain focus",
+        "track emotional state"
+    ],
+    "intent_mappings": {
+        "routine": [
+            "schedule",
+            "habit",
+            "morning ritual"
+        ],
+        "stress": [
+            "anxiety",
+            "overwhelm",
+            "pressure"
+        ],
+        "sleep": [
+            "rest",
+            "insomnia",
+            "night"
+        ],
+        "creativity": [
+            "imagination",
+            "art",
+            "expression"
+        ],
+        "mindfulness": [
+            "meditation",
+            "present",
+            "calm"
+        ],
+        "connection": [
+            "friends",
+            "family",
+            "relationships"
+        ],
+        "focus": [
+            "attention",
+            "distraction",
+            "concentration"
+        ],
+        "emotion": [
+            "mood",
+            "feeling",
+            "sentiment"
+        ]
+    },
+    "historical_intents": []
+}

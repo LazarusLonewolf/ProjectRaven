@@ -1,0 +1,5 @@
+User: TestUser
+Timestamp: 2025-05-23_01-43-27
+
+Entry:
+This is a test journal entry to verify logging.
