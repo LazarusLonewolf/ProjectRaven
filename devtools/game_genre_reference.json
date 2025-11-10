@@ -1,0 +1,42 @@
+{
+    "Platformer": {
+        "description": "Games that involve guiding a character through levels using jumping and climbing to overcome obstacles.",
+        "examples": [
+            "Super Mario Bros.",
+            "Celeste",
+            "Hollow Knight"
+        ]
+    },
+    "Action RPG": {
+        "description": "Role-playing games that emphasize real-time combat and inventory-based character progression.",
+        "examples": [
+            "The Legend of Zelda: Breath of the Wild",
+            "Dark Souls",
+            "Diablo"
+        ]
+    },
+    "Turn-Based RPG": {
+        "description": "Role-playing games with combat systems that allow players and enemies to take turns.",
+        "examples": [
+            "Final Fantasy VI",
+            "Persona 5",
+            "Dragon Quest XI"
+        ]
+    },
+    "Metroidvania": {
+        "description": "Exploration-based 2D platformers featuring ability-gated progression and interconnected worlds.",
+        "examples": [
+            "Castlevania: Symphony of the Night",
+            "Metroid Dread",
+            "Axiom Verge"
+        ]
+    },
+    "Adventure": {
+        "description": "Games focused on story-driven exploration and puzzle-solving.",
+        "examples": [
+            "The Legend of Zelda",
+            "Monkey Island",
+            "Life is Strange"
+        ]
+    }
+}
